@@ -534,12 +534,12 @@ export const APP_MENU_ITEMS: MenuItemType[] = [
         url: '/services/land-sea-transport-services',
         parentKey: 'services',
       },
-      {
-        key: 'coin-laundromat',
-        label: 'Coin Laundromat',
-        url: '/services/coin-laundromat',
-        parentKey: 'services',
-      },
+      // {
+      //   key: 'coin-laundromat',
+      //   label: 'Coin Laundromat',
+      //   url: '/services/coin-laundromat',
+      //   parentKey: 'services',
+      // },
     ],
   },
 ]

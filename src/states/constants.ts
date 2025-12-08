@@ -6,7 +6,7 @@ export const currentYear = new Date().getFullYear()
 
 export const developedByLink = 'https://stackbros.in/'
 
-export const developedBy = 'Stackbros'
+export const developedBy = ' designspace.my'
 
 export const buyLink = ''
 

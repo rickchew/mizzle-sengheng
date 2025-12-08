@@ -73,14 +73,10 @@ const Features = () => {
                 <h3 className="mb-4">Containers and Baskets</h3>
                 <p>
                   We manufacture durable containers and industrial baskets designed for heavy-duty storage and transport. These are built with precision to handle demanding environments, ensuring secure and efficient operations.
-
-
-
-                  <br></br><br></br><strong>- Durable containers for storage and transport</strong>
-                  <br></br><strong>- Industrial baskets for heavy-duty applications</strong>
-
-
+                  <br></br><br></br>
                 </p>
+                <h6>‣ Durable containers for storage and transport</h6>
+                <h6>‣ Industrial baskets for heavy-duty applications</h6>
               </Col>
               <Col md={6} className="ps-md-7 order-md-2">
                 <div className="bg-light p-4 rounded-3">
@@ -98,15 +94,10 @@ const Features = () => {
                 <h3 className="mb-4">Custom Fabricated Products​​</h3>
                 <p>
                   Our expertise in custom fabrication allows us to design and produce bespoke metal structures to meet unique client specifications. From specialized frameworks to complex components, we provide solutions that align with customer requirements and industry standards.
-
-
-
-                  <br></br><br></br><strong>- Engineered solutions tailored to customer specifications</strong>
-                  <br></br><strong>- Includes specialized frameworks, racks, and supports</strong>
-
-
-
+                  <br></br><br></br>
                 </p>
+                <h6>‣ Tailored to customer specifications</h6>
+                <h6>‣ Includes specialized frameworks, racks, and supports</h6>
               </Col>
             </Row>
             

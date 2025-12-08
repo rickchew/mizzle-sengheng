@@ -24,7 +24,7 @@ const Footer1 = () => {
             <LogoBox imageClassName="h-40px" className="me-0" />
 
             <p className="mt-4 mb-2">
-              A Bootstrap theme that&apos;s both stylish and functional, perfect for any type of technology or corporate website.
+              Discover our journey, core values, and two decades of commitment to excellence in Sarawak’s marine and offshore services sector. We provide pioneering, integrated solutions across port handling, shipping, and vessel maintenance.
             </p>
           </Col>
           <Col lg={8} xxl={7}>
