@@ -1,4 +1,5 @@
-import Footer2 from '@/components/footer/Footer1'
+import Footer2 from '@/components/footer/Footer2'
+import Footer1 from '@/components/footer/Footer1'
 import React from 'react'
 import FAQs from './component/FAQs'
 import Testimonials from './component/Testimonials'
@@ -26,7 +27,7 @@ const page = () => {
         <Location />
         <FAQs /> */}
       </main>
-      <Footer2 data-bs-theme="dark" theme="dark" />
+      <Footer1 />
     </>
   )
 }

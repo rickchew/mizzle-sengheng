@@ -16,7 +16,7 @@ const page = () => {
         menuProps={{
           showMegaMenu: true,
           showContactUs: true,
-          ulClassName: 'mx-auto',
+          ulClassName: 'ms-auto',
         }}
         showBuyNow
         showSignUp
