@@ -12,7 +12,7 @@ import { BsPersonCircle } from 'react-icons/bs'
 import FloatingSearch from './FloatingSearch'
 import SearchInput from './SearchInput'
 import ShoppingCartOffcanvas from './ShoppingCartOffcanvas'
-import ThemeToggleDropdown from './ThemeToggleDropdown'
+// import ThemeToggleDropdown from './ThemeToggleDropdown'
 
 type TopNavigationBarProps = {
   containerFluid?: boolean

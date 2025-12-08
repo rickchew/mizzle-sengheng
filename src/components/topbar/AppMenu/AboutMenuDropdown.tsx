@@ -63,12 +63,12 @@ const PagesMenuDropdown = ({ menuItems, activeMenuItems }: PagesMenuDropdownProp
         as={Link}
         href=""
         variant="link"
-        className={`nav-link mb-0 arrow-none d-flex w-100 justify-content-between align-items-center dropdown-toggle${getActiveClass(activeMenuItems, 'services')}`}
+        className={`nav-link mb-0 arrow-none d-flex w-100 justify-content-between align-items-center dropdown-toggle${getActiveClass(activeMenuItems, 'about')}`}
         data-bs-toggle="dropdown"
         data-bs-auto-close="outside"
         aria-haspopup="true"
         aria-expanded="false">
-        Services
+        About
         <FaAngleDown size={12} className="ms-1" />
       </DropdownToggle>
       <div className="dropdown-menu" data-bs-popper="static">
@@ -88,28 +88,6 @@ const PagesMenuDropdown = ({ menuItems, activeMenuItems }: PagesMenuDropdownProp
             </Fragment>
           )
         })}
-
-        <li>
-          <hr className="dropdown-divider" />
-        </li>
-        {/* <li>
-          <Link className="dropdown-item" href="https://1.envato.market/stackbros-portfolio">
-            <BsLifePreserver className="me-2" />
-            Support
-          </Link>
-        </li> */}
-        <li>
-          <Link className="dropdown-item" href="/services/car-rental-service">
-            <BsCardText className="me-2" />
-            Car Rental Service
-          </Link>
-        </li>
-        <li>
-          <Link className="dropdown-item" href="https://www.grandshhotel.com/" target="_blank">
-            <BsCardText className="me-2" />
-            Hotel & Accommodation
-          </Link>
-        </li>
       </div>
     </Dropdown>
   )

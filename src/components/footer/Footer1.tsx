@@ -30,7 +30,7 @@ const Footer1 = () => {
           <Col lg={8} xxl={7}>
             <Row className="g-4">
               <Col xs={6} md={4}>
-                <h6 className="mb-2 mb-md-4">Quick links</h6>
+                <h6 className="mb-2 mb-md-4">Services</h6>
                 <ul className="nav flex-column">
                   {quickLinks.map((item, idx) => (
                     <li key={(item.link ?? '') + idx} className="nav-item">
@@ -43,7 +43,7 @@ const Footer1 = () => {
                 </ul>
               </Col>
               <Col xs={6} md={4}>
-                <h6 className="mb-2 mb-md-4">Community</h6>
+                <h6 className="mb-2 mb-md-4">Quick Links</h6>
                 <ul className="nav flex-column">
                   {communityLinks.map((item, idx) => {
                     const Icon = item.icon

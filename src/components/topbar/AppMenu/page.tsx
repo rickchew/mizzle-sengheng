@@ -10,6 +10,7 @@ import { usePathname } from 'next/navigation'
 const DemosMenuDropdown = dynamic(() => import('./DemosMenuDropdown'))
 const PagesMenuDropdown = dynamic(() => import('./PagesMenuDropdown'))
 const ServicesMenuDropdown = dynamic(() => import('./ServicesMenuDropdown'))
+const AboutMenuDropdown = dynamic(() => import('./AboutMenuDropdown'))
 const ResourcesMenuDropdown = dynamic(() => import('./ResourcesMenuDropdown'))
 const PortfolioMenuDropdown = dynamic(() => import('./PortfolioMenuDropdown'))
 const MegaMenuDropdown = dynamic(() => import('./MegaMenuDropdown'))
@@ -65,14 +66,17 @@ const AppMenu = ({ mobileMenuOpen, ulClassName, showMegaMenu, showResourceMenu, 
               </Link>
             </li>
           )}
-          <Suspense fallback={loading()}>
+          {/* <Suspense fallback={loading()}>
             <DemosMenuDropdown menuItems={menuItems[0].children!} activeMenuItems={activeMenuItems} />
           </Suspense>
           <Suspense fallback={loading()}>
             <PagesMenuDropdown menuItems={menuItems[1].children!} activeMenuItems={activeMenuItems} />
-          </Suspense>
+          </Suspense> */}
           <Suspense fallback={loading()}>
             <ServicesMenuDropdown menuItems={menuItems[3].children!} activeMenuItems={activeMenuItems} />
+          </Suspense>
+          <Suspense fallback={loading()}>
+            <AboutMenuDropdown menuItems={menuItems[4].children!} activeMenuItems={activeMenuItems} />
           </Suspense>
 
           {/* {showResourceMenu && (
@@ -94,7 +98,7 @@ const AppMenu = ({ mobileMenuOpen, ulClassName, showMegaMenu, showResourceMenu, 
           {(
             <li className="nav-item">
               <Link className="nav-link" href="/about-us">
-                About Us
+                Contact Us
               </Link>
             </li>
           )}
