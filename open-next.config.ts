@@ -2,4 +2,8 @@
 import { defineCloudflareConfig } from "@opennextjs/cloudflare/config";
 
 // No Cloudflare-specific overrides — site is static and doesn't use R2.
-export default defineCloudflareConfig({});
+export default {
+  incrementalCache: {
+    provider: "memory"
+  }
+}

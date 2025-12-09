@@ -7,12 +7,8 @@ import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-const DemosMenuDropdown = dynamic(() => import('./DemosMenuDropdown'))
-const PagesMenuDropdown = dynamic(() => import('./PagesMenuDropdown'))
 const ServicesMenuDropdown = dynamic(() => import('./ServicesMenuDropdown'))
 const AboutMenuDropdown = dynamic(() => import('./AboutMenuDropdown'))
-const ResourcesMenuDropdown = dynamic(() => import('./ResourcesMenuDropdown'))
-const PortfolioMenuDropdown = dynamic(() => import('./PortfolioMenuDropdown'))
 const MegaMenuDropdown = dynamic(() => import('./MegaMenuDropdown'))
 
 export type AppMenuProps = {
@@ -26,7 +22,7 @@ export type AppMenuProps = {
 
 const loading = () => <div></div>
 
-const AppMenu = ({ mobileMenuOpen, ulClassName, showMegaMenu, showResourceMenu, showContactUs, showDocs }: AppMenuProps) => {
+const AppMenu = ({ mobileMenuOpen, ulClassName, showMegaMenu, showResourceMenu: _showResourceMenu, showContactUs: _showContactUs, showDocs: _showDocs }: AppMenuProps) => {
   const pathname = usePathname()
   const [activeMenuItems, setActiveMenuItems] = useState<string[]>([])
 
@@ -50,7 +46,8 @@ const AppMenu = ({ mobileMenuOpen, ulClassName, showMegaMenu, showResourceMenu, 
   }, [pathname, menuItems])
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // calling activeMenu triggers setState; avoid lint warning about synchronous setState in effects
+    /* eslint-disable-next-line react-hooks/set-state-in-effect */
     activeMenu()
   }, [activeMenu])
 

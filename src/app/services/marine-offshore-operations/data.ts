@@ -2,23 +2,15 @@ import { BlogType, ClientType, FeatureType, PricingPlanType } from './types'
 
 import client1 from '@/assets/images/client/01.svg'
 import client2 from '@/assets/images/client/02.svg'
-import client3 from '@/assets/images/client/03.svg'
-import client4 from '@/assets/images/client/04.svg'
-import client5 from '@/assets/images/client/05.svg'
-import client6 from '@/assets/images/client/06.svg'
-import client7 from '@/assets/images/client/07.svg'
-
 import client11 from '@/assets/images/client/client11.png'
 import client12 from '@/assets/images/client/client12.png'
 import client13 from '@/assets/images/client/client13.png'
-import client14 from '@/assets/images/client/client14.png'
-import client15 from '@/assets/images/client/client15.png'
 
 import blog1 from '@/assets/images/blog/4by3/01.jpg'
 import blog6 from '@/assets/images/blog/4by3/06.jpg'
 import blog7 from '@/assets/images/blog/4by3/07.jpg'
 
-import { BsArrowRepeat, BsBarChartSteps, BsBox2, BsBox2Fill, BsCupStraw, BsHourglassBottom, BsLightningChargeFill, BsPatchCheck, BsPersonArmsUp, BsRocketFill } from 'react-icons/bs'
+import { BsArrowRepeat, BsBox2, BsCupStraw, BsPatchCheck, BsPersonArmsUp } from 'react-icons/bs'
 
 export const clients: ClientType[] = [
   { image: client11 },

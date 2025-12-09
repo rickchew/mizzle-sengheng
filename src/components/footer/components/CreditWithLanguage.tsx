@@ -1,6 +1,4 @@
-import Link from 'next/link'
-import LanguageDropdown from './LanguageDropdown'
-import { currentYear, developedBy, developedByLink } from '@/states/constants'
+import { currentYear } from '@/states/constants'
 
 const CreditWithLanguage = () => {
   return (

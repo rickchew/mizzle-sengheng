@@ -1,6 +1,5 @@
 import about16 from '@/assets/images/about/16.jpg'
 import about15 from '@/assets/images/about/15.jpg'
-import about14 from '@/assets/images/about/14.jpg'
 import about22 from '@/assets/images/about/22.jpg'
 import { BsYoutube } from 'react-icons/bs'
 import GlightBox from '@/components/GlightBox'

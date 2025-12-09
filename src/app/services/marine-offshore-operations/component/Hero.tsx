@@ -1,12 +1,4 @@
-import mailchimp from '@/assets/images/elements/mailchimp.svg'
-import slack from '@/assets/images/elements/slack.svg'
-import webflow from '@/assets/images/elements/webflow.svg'
-import reddit from '@/assets/images/elements/reddit.svg'
-import dropbox from '@/assets/images/elements/dropbox.svg'
-import gicon from '@/assets/images/elements/gicon.svg'
-import logoIcon from '@/assets/images/logo-icon.svg'
 import { Container } from 'react-bootstrap'
-import Image from 'next/image'
 
 const Hero = () => {
   return (

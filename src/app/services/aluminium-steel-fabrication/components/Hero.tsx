@@ -2,7 +2,6 @@ import pattern2 from '@/assets/images/elements/bg-pattern-2.png'
 import saasBg from '@/assets/images/services/01.jpg'
 import decoration1 from '@/assets/images/services/02.jpg'
 import { Col, Container, Row } from 'react-bootstrap'
-import Link from 'next/link'
 import Image from 'next/image'
 const Hero = () => {
   return (

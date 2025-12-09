@@ -4,11 +4,10 @@ import AppMenu, { type AppMenuProps } from '@/components/topbar/AppMenu/page'
 import StickyHeader from '@/components/topbar/AppMenu/StickyHeader'
 import MobileNavbarToggler from '@/components/topbar/MobileNavbarToggler'
 import useToggle from '@/hooks/useToggle'
-import { buyLink } from '@/states/constants'
-import Link from 'next/link'
+import { /* buyLink */ } from '@/states/constants'
 import { Suspense, type ReactNode } from 'react'
 import { Button, Container, type ButtonProps } from 'react-bootstrap'
-import { BsPersonCircle } from 'react-icons/bs'
+// BsPersonCircle intentionally not imported (signup markup is commented-out)
 import FloatingSearch from './FloatingSearch'
 import SearchInput from './SearchInput'
 import ShoppingCartOffcanvas from './ShoppingCartOffcanvas'
@@ -29,12 +28,12 @@ type TopNavigationBarProps = {
 }
 
 const TopNavigationBar = ({
-  showBuyNow,
-  showSignUp,
+  _showBuyNow,
+  _showSignUp,
   showSearchInput,
   showShoppingCart,
   navClassName,
-  hideThemeToggler,
+  _hideThemeToggler,
   darkButton,
   showFloatingSearch,
   menuProps,

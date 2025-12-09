@@ -1,5 +1,3 @@
-import decoration10 from '@/assets/images/elements/saas-decoration/10.png'
-import decoration11 from '@/assets/images/elements/saas-decoration/11.png'
 import decoration12 from '@/assets/images/elements/saas-decoration/12.png'
 import decoration13 from '@/assets/images/services/valve.jpg'
 import decoration14 from '@/assets/images/services/skid.jpg'
