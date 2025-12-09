@@ -9,6 +9,7 @@ import Integrations from './component/Integrations'
 import Pricing from './component/Pricing'
 import Blogs from './component/Blogs'
 import Footer6 from '@/components/footer/Footer6'
+import Footer1 from '@/components/footer/Footer1'
 
 const page = () => {
   return (
@@ -34,7 +35,7 @@ const page = () => {
         <Blogs /> */}
       </main>
 
-      <Footer6 />
+      <Footer1 />
     </>
   )
 }

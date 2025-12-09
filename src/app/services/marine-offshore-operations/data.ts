@@ -8,6 +8,12 @@ import client5 from '@/assets/images/client/05.svg'
 import client6 from '@/assets/images/client/06.svg'
 import client7 from '@/assets/images/client/07.svg'
 
+import client11 from '@/assets/images/client/client11.png'
+import client12 from '@/assets/images/client/client12.png'
+import client13 from '@/assets/images/client/client13.png'
+import client14 from '@/assets/images/client/client14.png'
+import client15 from '@/assets/images/client/client15.png'
+
 import blog1 from '@/assets/images/blog/4by3/01.jpg'
 import blog6 from '@/assets/images/blog/4by3/06.jpg'
 import blog7 from '@/assets/images/blog/4by3/07.jpg'
@@ -15,35 +21,35 @@ import blog7 from '@/assets/images/blog/4by3/07.jpg'
 import { BsArrowRepeat, BsBarChartSteps, BsBox2, BsBox2Fill, BsCupStraw, BsHourglassBottom, BsLightningChargeFill, BsPatchCheck, BsPersonArmsUp, BsRocketFill } from 'react-icons/bs'
 
 export const clients: ClientType[] = [
-  { image: client3 },
-  { image: client7 },
-  { image: client5 },
-  { image: client4 },
+  { image: client11 },
+  { image: client12 },
+  { image: client13 },
   { image: client1 },
   { image: client2 },
-  { image: client3 },
-  { image: client6 },
+  // { image: client2 },
+  // { image: client3 },
+  // { image: client6 },
 ]
 
 export const features: FeatureType[] = [
   {
     title: 'Offshore Personnel Transfer',
-    description: 'Transport crew and visitors safely and efficiently between shore and offshore vessels.',
+    description: 'We operate passenger boats to transport crew members, technicians, surveyors, and visitors between shore facilities and offshore vessels. All operations are conducted safely and in compliance with maritime regulations.',
     icon: BsPersonArmsUp,
   },
   {
     title: 'Delivery Documents and Parts',
-    description: 'Ensure critical documents and essential parts reach vessels on time, every time.',
+    description: 'We provide secure and timely delivery of operational and commercial documents, as well as ship spares, tools, and essential equipment. These services help vessels maintain operational continuity and minimize downtime.',
     icon: BsArrowRepeat,
   },
   {
     title: 'Supply Of Food And Provisions',
-    description: 'Provide crews with fresh, reliable provisions to support safe and smooth operations at sea.',
+    description: 'We supply food, water, and other consumables to vessels stationed offshore or on long voyages. This ensures crews have access to reliable and nutritious provisions, supporting safe and effective operations at sea.',
     icon: BsCupStraw,
   },
   {
     title: 'Offshore Logistics Support',
-    description: 'Coordinate schedules and handle equipment to keep offshore projects running efficiently.',
+    description: 'Our offshore support services include scheduling, logistics coordination, and basic on-board equipment handling, helping projects run smoothly and efficiently.',
     icon: BsBox2,
   },
 ]

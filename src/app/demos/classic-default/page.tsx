@@ -14,7 +14,7 @@ const page = () => {
     <>
       <TopNavigationBar
         menuProps={{
-          showMegaMenu: true,
+          showMegaMenu: false,
           showContactUs: true,
           ulClassName: 'ms-auto',
         }}
