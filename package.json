@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "deploy": "npm run start",
     "deploy-workers": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx}'"
   },

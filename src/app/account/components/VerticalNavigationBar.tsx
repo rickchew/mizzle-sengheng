@@ -4,7 +4,6 @@ import { BsPencilSquare, BsPerson } from 'react-icons/bs'
 import { FaSignOutAlt } from 'react-icons/fa'
 
 import { ACCOUNT_VERTICAL_MENU_ITEMS } from '@/assets/data/menu-items'
-import { useAuthContext } from '@/states/useAuthContext'
 
 import avatar5 from '@/assets/images/avatar/05.jpg'
 import Image from 'next/image'
@@ -14,7 +13,7 @@ import { usePathname } from 'next/navigation'
 const VerticalNavigationBar = () => {
   const  pathname  = usePathname()
 
-  const { removeSession } = useAuthContext()
+  // Auth has been removed; sign-out behavior is disabled
 
   return (
     <Card className="border p-3 w-100">
@@ -43,12 +42,7 @@ const VerticalNavigationBar = () => {
             )
           })}
 
-          <li className="nav-item">
-            <button onClick={removeSession} className="nav-link text-danger icons-center w-100">
-              <FaSignOutAlt className="me-2" />
-              Sign Out
-            </button>
-          </li>
+          {/* Sign out removed because authentication was disabled */}
         </ul>
       </CardBody>
     </Card>

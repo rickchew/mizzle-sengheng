@@ -1,6 +1,4 @@
-'use client'
-
-import { AuthProvider } from '@/states/useAuthContext'
+ 'use client'
 import { NotificationProvider } from '@/states/useNotificationContext'
 import { ShopProvider } from '@/states/useShoppingContext'
 import dynamic from 'next/dynamic'
@@ -14,11 +12,9 @@ const PageWrapper = ({children}:{children:React.ReactNode}) => {
     return(
         <NotificationProvider>
           <LayoutProvider>
-            <AuthProvider>
-              <ShopProvider>
-                {children}
-                </ShopProvider>
-            </AuthProvider>
+            <ShopProvider>
+              {children}
+            </ShopProvider>
           </LayoutProvider>
         </NotificationProvider>
     )
