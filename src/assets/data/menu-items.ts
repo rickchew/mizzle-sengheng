@@ -517,9 +517,9 @@ export const APP_MENU_ITEMS: MenuItemType[] = [
         parentKey: 'services',
       },
       {
-        key: 'boats-vessels-charter-suppliest',
+        key: 'engineering-shipyard-services',
         label: 'Engineering & Shipyard Services',
-        url: '/services/boats-vessels-charter-suppliest',
+        url: '/services/engineering-shipyard-services',
         parentKey: 'services',
       },
       {
