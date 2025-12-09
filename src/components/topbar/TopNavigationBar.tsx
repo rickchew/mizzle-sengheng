@@ -27,24 +27,26 @@ type TopNavigationBarProps = {
   children?: ReactNode
 }
 
-const TopNavigationBar = ({
-  _showBuyNow,
-  _showSignUp,
-  showSearchInput,
-  showShoppingCart,
-  navClassName,
-  _hideThemeToggler,
-  darkButton,
-  showFloatingSearch,
-  menuProps,
-  containerFluid,
-  children,
-  ...props
-}: TopNavigationBarProps) => {
+const TopNavigationBar = (props: TopNavigationBarProps) => {
+  const {
+    showSearchInput,
+    showShoppingCart,
+    navClassName,
+    hideThemeToggler: _hideThemeToggler,
+    darkButton,
+    showFloatingSearch,
+    menuProps,
+    containerFluid,
+    children,
+    showBuyNow: _showBuyNow,
+    showSignUp: _showSignUp,
+    ...rest
+  } = props
+
   const { isTrue: isMenuOpen, toggle: toggleMenu } = useToggle(window.innerWidth >= 1200)
 
   return (
-    <StickyHeader className="header-absolute" {...props}>
+  <StickyHeader className="header-absolute" {...rest}>
       {children}
       <nav className={`navbar navbar-expand-xl ${navClassName ?? ''}`}>
         <Container fluid={containerFluid}>
