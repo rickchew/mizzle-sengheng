@@ -10,8 +10,7 @@ export function proxy(request: NextRequest) {
 }
 
 // See "Matching Paths" below to learn more
-export const config = {
-  matcher: '/',
-}
+// Note: `next-auth` middleware (Node runtime) was removed to avoid
+// `src/proxy.ts` removed - middleware logic is now implemented in project-root `middleware.ts`
+// This file intentionally left blank to avoid Next.js picking it up as middleware.
 
-export { default } from 'next-auth/middleware'
