@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'react-bootstrap'
 import type { IconType } from 'react-icons'
 import { BsLaptop, BsPencilSquare, BsPhone, BsSlashCircle, BsTablet, BsThreeDotsVertical } from 'react-icons/bs'
@@ -13,18 +12,21 @@ type LoggedInDeviceCardProps = {
   isActive?: boolean
 }
 
-const getIcon = (device: LoggedInDeviceCardProps['device']['type']): IconType => {
-  if (device === 'laptop') return BsLaptop
-  else if (device === 'tablet') return BsTablet
-  else return BsPhone
-}
-
 const LoggedInDeviceCard = ({ device, lastActiveAt, location, isActive }: LoggedInDeviceCardProps) => {
-  const Icon = getIcon(device.type)
+  let IconElement: IconType | null = null
+  
+  if (device.type === 'laptop') {
+    IconElement = BsLaptop
+  } else if (device.type === 'tablet') {
+    IconElement = BsTablet
+  } else {
+    IconElement = BsPhone
+  }
+
   return (
     <div className="d-flex border-bottom pb-4 mb-4">
       <span className="fs-5 heading-color">
-        <Icon />
+        {IconElement && <IconElement />}
       </span>
       <div className="ms-2">
         <p className="heading-color fw-bold mb-0">

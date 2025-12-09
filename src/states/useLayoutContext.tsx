@@ -65,7 +65,7 @@ const LayoutProvider = ({ children }: Readonly<{ children: ReactNode }>) => {
           ...settings,
           updateTheme,
         }),
-          [settings]
+          [settings, updateTheme]
         )}
     >
       {children}

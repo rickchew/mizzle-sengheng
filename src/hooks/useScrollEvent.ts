@@ -11,9 +11,13 @@ const useScrollEvent = () => {
   }
 
   useEffect(() => {
+    const handleEffect = () => {
+      setScrollY(window.scrollY)
+      setScrollHeight(document.body.offsetHeight)
+    }
+    
+    handleEffect() // Set initial values
     window.addEventListener('scroll', handleScroll, { passive: true })
-    setScrollY(window.scrollY)
-    setScrollHeight(document.body.offsetHeight)
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }

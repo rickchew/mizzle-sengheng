@@ -1,7 +1,6 @@
 import { Card, CardBody, CardHeader } from 'react-bootstrap'
 import type { IconType } from 'react-icons'
 import { BsPencilSquare, BsPerson } from 'react-icons/bs'
-import { FaSignOutAlt } from 'react-icons/fa'
 
 import { ACCOUNT_VERTICAL_MENU_ITEMS } from '@/assets/data/menu-items'
 
