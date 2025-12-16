@@ -523,21 +523,21 @@ export const APP_MENU_ITEMS: MenuItemType[] = [
         parentKey: 'services',
       },
       {
-        key: 'ship-building-repairing',
+        key: 'logistics-transport-solutions',
         label: 'Logistics & Transport Solutions',
-        url: '/services/ship-building-repairing',
+        url: '/services/logistics-transport-solutions',
         parentKey: 'services',
       },
       {
-        key: 'land-sea-transport-services',
+        key: 'marine-equipment-general-supplies',
         label: 'Marine Equipment & General Supplies',
-        url: '/services/land-sea-transport-services',
+        url: '/services/marine-equipment-general-supplies',
         parentKey: 'services',
       },
       {
-        key: 'general-supplies',
+        key: 'cold-storage-chillers',
         label: 'Cold Storage & Chillers',
-        url: '/services/general-supplies',
+        url: '/services/gcold-storage-chillers',
         parentKey: 'services',
       },
       // {
