@@ -9,7 +9,7 @@ const page = () => {
       <TopNavigationBar
         menuProps={{
           showContactUs: true,
-          showDocs: true,
+          showDocs: false,
           ulClassName: 'ms-auto',
         }}
         // showSignUp

@@ -505,6 +505,24 @@ export const APP_MENU_ITEMS: MenuItemType[] = [
     label: 'Services',
     children: [
       {
+        key: 'engineering-shipyard-services',
+        label: 'Engineering & Shipyard Services',
+        url: '/services/engineering-shipyard-services',
+        parentKey: 'services',
+      },
+      {
+        key: 'marine-equipment-general-supplies',
+        label: 'Marine Equipment & General Supplies',
+        url: '/services/marine-equipment-general-supplies',
+        parentKey: 'services',
+      },
+      {
+        key: 'logistics-transport-solutions',
+        label: 'Logistics & Transport Solutions',
+        url: '/services/logistics-transport-solutions',
+        parentKey: 'services',
+      },
+      {
         key: 'aluminium-steel-fabrication',
         label: 'Aluminium & Steel Fabrication​',
         url: '/services/aluminium-steel-fabrication',
@@ -516,24 +534,9 @@ export const APP_MENU_ITEMS: MenuItemType[] = [
         url: '/services/marine-offshore-operations',
         parentKey: 'services',
       },
-      {
-        key: 'engineering-shipyard-services',
-        label: 'Engineering & Shipyard Services',
-        url: '/services/engineering-shipyard-services',
-        parentKey: 'services',
-      },
-      {
-        key: 'logistics-transport-solutions',
-        label: 'Logistics & Transport Solutions',
-        url: '/services/logistics-transport-solutions',
-        parentKey: 'services',
-      },
-      {
-        key: 'marine-equipment-general-supplies',
-        label: 'Marine Equipment & General Supplies',
-        url: '/services/marine-equipment-general-supplies',
-        parentKey: 'services',
-      },
+      
+      
+      
       {
         key: 'cold-storage-chillers',
         label: 'Cold Storage & Chillers',
@@ -570,12 +573,31 @@ export const APP_MENU_ITEMS: MenuItemType[] = [
         url: '/about-us/hse',
         parentKey: 'about',
       },
-      // {
-      //   key: 'coin-laundromat',
-      //   label: 'Coin Laundromat',
-      //   url: '/services/coin-laundromat',
-      //   parentKey: 'services',
-      // },
+    ],
+  },
+  {
+    key: 'our-fleet',
+    label: 'Our Fleet',
+    url: '/our-fleet',
+    children: [
+      {
+        key: 'company-profile',
+        label: 'Company Profile​',
+        url: '/about-us/company-profile',
+        parentKey: 'about',
+      },
+      {
+        key: 'vision-mission',
+        label: 'Vision & Mission',
+        url: '/about-us/vision-mission',
+        parentKey: 'about',
+      },
+      {
+        key: 'hse',
+        label: 'Health, Safety & Environment (HSE)',
+        url: '/about-us/hse',
+        parentKey: 'about',
+      },
     ],
   },
 ]

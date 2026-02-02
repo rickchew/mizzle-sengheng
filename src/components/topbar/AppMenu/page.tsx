@@ -92,7 +92,13 @@ const AppMenu = ({ mobileMenuOpen, ulClassName, showMegaMenu, showResourceMenu: 
               <MegaMenuDropdown />
             </Suspense>
           )}
-
+          {(
+            <li className="nav-item">
+              <Link className="nav-link" href="/about-us">
+                Our Fleet
+              </Link>
+            </li>
+          )}
           {(
             <li className="nav-item">
               <Link className="nav-link" href="/about-us">

@@ -101,7 +101,6 @@ const TopNavigationBar = (props: TopNavigationBarProps) => {
                 <ShoppingCartOffcanvas />
               </Suspense>
             )}
-
             <li className="nav-item">
               <MobileNavbarToggler isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
             </li>
