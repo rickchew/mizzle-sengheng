@@ -33,7 +33,7 @@ const About = () => {
 
           <Col lg={5}>
             <span className="heading-color bg-light small rounded-3 px-3 py-2">🤝 Your integrated marine partner</span>
-            <h2 className="my-4">Serving Sarawak's marine &amp; offshore sector since 1998</h2>
+            <h2 className="my-4">Serving Sarawak&apos;s marine &amp; offshore sector since 1998</h2>
             <p className="mb-4">
               Seng Heng provides end-to-end marine services — from offshore crew transfer and ship chandling to customs clearance, equipment rental, fabrication, and ship repairs — all under one roof in Miri, Sarawak.
             </p>

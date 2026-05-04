@@ -20,7 +20,7 @@ const Benefits = () => {
           <Col md={6}>
             <h4 className="mb-4">Our Engineering Approach</h4>
             <p>
-              Seng Heng's shipyard and engineering team works across the full lifecycle of a vessel — from new construction to ongoing maintenance and emergency repair. Every project is handled by experienced marine engineers and certified welders who understand the demands of offshore operations.
+              Seng Heng&apos;s shipyard and engineering team works across the full lifecycle of a vessel — from new construction to ongoing maintenance and emergency repair. Every project is handled by experienced marine engineers and certified welders who understand the demands of offshore operations.
             </p>
             <p>
               We combine hands-on shipyard capability with engineering design tools including CAD and FEM analysis, ensuring that structural and mechanical solutions are not only practical but certified and compliant with classification society requirements.
