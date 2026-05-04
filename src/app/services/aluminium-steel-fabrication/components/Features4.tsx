@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { Col, Container, Row } from 'react-bootstrap'
 const Features = () => {
   return (
-    <section className="pt-xl-0">
+    <section className="pt-5">
       <Container className="pt-xl-6">
         <div className="inner-container-small text-center mb-4 mb-sm-7">
           <span className="bg-primary bg-opacity-10 text-primary text-uppercase rounded small px-3 py-2">Our Services</span>

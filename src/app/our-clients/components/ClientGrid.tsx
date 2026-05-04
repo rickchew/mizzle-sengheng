@@ -1,25 +1,33 @@
+import petrosImg from '@/assets/images/client/petros.png'
+import chemsainImg from '@/assets/images/client/chemsain.png'
 import client1Img from '@/assets/images/client/01.svg'
+import dialogImg from '@/assets/images/client/dialog.png'
+import skomImg from '@/assets/images/client/skom.png'
 import client2Img from '@/assets/images/client/02.svg'
+import petronasImg from '@/assets/images/client/petronas.png'
+import hgisImg from '@/assets/images/client/hgis.png'
 import client3Img from '@/assets/images/client/03.svg'
+import dayangImg from '@/assets/images/client/dayang.png'
 import client4Img from '@/assets/images/client/04.svg'
+import envirosImg from '@/assets/images/client/enviros.png'
 import client5Img from '@/assets/images/client/05.svg'
 import Image from 'next/image'
 import { Col, Container, Row } from 'react-bootstrap'
 
 const clients = [
-  { image: client1Img, name: 'Petros', sector: 'Oil & Gas Operator' },
-  { image: client2Img, name: 'Dialog', sector: 'Integrated Oil Services' },
-  { image: client3Img, name: 'Petronas', sector: 'National Oil Corporation' },
-  { image: client4Img, name: 'Dayang DESB', sector: 'Offshore Hook-Up & Commissioning' },
-  { image: client5Img, name: 'Enviros', sector: 'Environmental Services' },
-  { image: client1Img, name: 'Cheimsain', sector: 'Marine & Offshore' },
-  { image: client2Img, name: 'SK Offshore', sector: 'Offshore Support' },
-  { image: client3Img, name: 'HGIS', sector: 'Oil & Gas Services' },
+  { image: petrosImg, name: 'Petros', sector: 'Oil & Gas Operator' },
+  { image: dialogImg, name: 'Dialog', sector: 'Integrated Oil Services' },
+  { image: petronasImg, name: 'Petronas', sector: 'National Oil Corporation' },
+  { image: dayangImg, name: 'Dayang DESB', sector: 'Offshore Hook-Up & Commissioning', imgStyle: { maxHeight: 65, maxWidth: 200, width: 'auto' } },
+  { image: envirosImg, name: 'Enviros', sector: 'Environmental Services', imgStyle: { maxHeight: 90, maxWidth: 280, width: 'auto' } },
+  { image: chemsainImg, name: 'Chemsain', sector: 'Marine & Offshore' },
+  { image: skomImg, name: 'SKOM', sector: 'Offshore Support' },
+  { image: hgisImg, name: 'HGIS', sector: 'Oil & Gas Services' },
 ]
 
 const ClientGrid = () => {
   return (
-    <section>
+    <section className="pt-5">
       <Container>
         <div className="inner-container-small text-center mb-6">
           <span className="bg-primary bg-opacity-10 text-primary text-uppercase rounded small px-3 py-2">Our Partners</span>
@@ -33,7 +41,7 @@ const ClientGrid = () => {
             <Col key={idx}>
               <div className="card card-body bg-light border-0 text-center p-4 h-100 d-flex flex-column align-items-center justify-content-center">
                 <div className="mb-3" style={{ height: 60, display: 'flex', alignItems: 'center' }}>
-                  <Image src={client.image} alt={client.name} className="grayscale" style={{ maxHeight: 50, width: 'auto' }} />
+                  <Image src={client.image} alt={client.name} className="grayscale" style={client.imgStyle ?? { maxHeight: 45, maxWidth: 150, width: 'auto' }} />
                 </div>
                 <h6 className="mb-1">{client.name}</h6>
                 <p className="small text-muted mb-0">{client.sector}</p>

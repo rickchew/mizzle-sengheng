@@ -43,7 +43,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="pt-0">
+    <section className="pt-5">
       <Container>
         <div className="inner-container-small text-center mb-4 mb-sm-6">
           <span className="bg-primary bg-opacity-10 text-primary text-uppercase rounded small px-3 py-2">What We Offer</span>

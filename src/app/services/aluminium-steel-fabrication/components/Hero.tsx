@@ -3,19 +3,20 @@ import saasBg from '@/assets/images/services/01.jpg'
 import decoration1 from '@/assets/images/services/02.jpg'
 import { Col, Container, Row } from 'react-bootstrap'
 import Image from 'next/image'
+import Link from 'next/link'
 const Hero = () => {
   return (
     <section className="pt-lg-8">
       <Container className="position-relative pt-4 pt-lg-0">
         <Row className="align-items-center">
           <Col lg={5} className="mb-5 mb-md-0">
-            <h1 className="mb-4">Aluminium & Steel Fabrication​</h1>
+            <h1 className="mb-4">Aluminium & Steel Fabrication</h1>
             <p className="mb-4">
-              Engineering and Fabrication Solutions for Steel Structures and Onshore Systems​.
+              Precision fabrication of steel structures, piping systems, industrial skids, and custom metal components for offshore and industrial applications across East Malaysia.
             </p>
-            {/* <Link href="/saas/features-single" className="btn btn-lg btn-dark mb-0">
-              Start Exploring Now
-            </Link> */}
+            <Link href="/contact" className="btn btn-lg btn-dark mb-0">
+              Request a Quote
+            </Link>
           </Col>
           <Col lg={6} className="ms-auto">
             <div className="position-relative pe-4 pe-sm-6">
