@@ -1,5 +1,5 @@
 'use client'
-import bg6Img from '@/assets/images/bg/06.jpg'
+import bg6Img from '@/assets/images/home-hero.jpg'
 import { Col, Container, Row } from 'react-bootstrap'
 import { BsWater, BsShieldCheck } from 'react-icons/bs'
 import { ReactTyped } from 'react-typed'

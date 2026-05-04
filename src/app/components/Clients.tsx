@@ -9,7 +9,7 @@ import { clientData } from '../data'
 
 const Clients = () => {
   return (
-    <section className="pb-0">
+    <section className="pb-5">
       <Container>
         <Row className="align-items-center">
           <Col md={3} className="mb-2 mb-md-0">
