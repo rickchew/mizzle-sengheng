@@ -3,17 +3,17 @@ import TopNavigationBar from '@/components/topbar/TopNavigationBar'
 import type { Metadata } from 'next'
 import Benefits from './components/Benefits'
 import CTA from './components/CTA'
+import Features from './components/Features'
 import Hero from './components/Hero'
-import Overview from './components/Overview'
 import Steps from './components/Steps'
 
 export const metadata: Metadata = {
-  title: 'Engineering & Shipyard Services',
+  title: 'Marine Equipment Rental & General Supplies',
   description:
-    'Ship repairs, hull maintenance, engine overhauls, structural welding, CAD engineering, and custom fabrication for the marine and offshore sector in East Malaysia, Labuan, and Brunei.',
+    'Class-certified generators, hydraulic A-frames, tugger winches, DNV containers, rescue boats, and offshore equipment rental across East Malaysia, Labuan, and Brunei.',
 }
 
-const EngineeringShipyardPage = () => {
+const MarineEquipmentPage = () => {
   return (
     <>
       <TopNavigationBar
@@ -22,10 +22,11 @@ const EngineeringShipyardPage = () => {
           showDocs: true,
           ulClassName: 'ms-auto',
         }}
+        data-bs-theme="dark"
       />
       <main>
         <Hero />
-        <Overview />
+        <Features />
         <Benefits />
         <Steps />
         <CTA />
@@ -35,4 +36,4 @@ const EngineeringShipyardPage = () => {
   )
 }
 
-export default EngineeringShipyardPage
+export default MarineEquipmentPage

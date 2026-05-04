@@ -1,4 +1,4 @@
-import { BsBinoculars, BsBoxes, BsBriefcase, BsBullseye, BsCircleSquare, BsCodeSlash, BsStack, BsVectorPen } from 'react-icons/bs'
+import { BsWater, BsBoxSeam, BsGear, BsTools, BsWrench } from 'react-icons/bs'
 
 import client1Img from '@/assets/images/client/01.svg'
 import client2Img from '@/assets/images/client/02.svg'
@@ -14,78 +14,46 @@ import { UserType } from '@/types/user'
 import { ClientType, ServiceType, TestimonialType } from './types'
 
 export const clientData: ClientType[] = [
-  {
-    image: client1Img,
-  },
-  {
-    image: client2Img,
-  },
-  {
-    image: client3Img,
-  },
-  {
-    image: client4Img,
-  },
-  {
-    image: client5Img,
-  },
-  {
-    image: client1Img,
-  },
-  {
-    image: client2Img,
-  },
-  {
-    image: client3Img,
-  },
-  {
-    image: client4Img,
-  },
-  {
-    image: client5Img,
-  },
+  { image: client1Img, name: 'Petros' },
+  { image: client2Img, name: 'Dialog' },
+  { image: client3Img, name: 'Petronas' },
+  { image: client4Img, name: 'Dayang DESB' },
+  { image: client5Img, name: 'Enviros' },
+  { image: client1Img, name: 'Cheimsain' },
+  { image: client2Img, name: 'SK Offshore' },
+  { image: client3Img, name: 'HGIS' },
 ]
 
 export const services: ServiceType[] = [
   {
-    title: 'Digital Marketing',
-    description: 'Growing brands online through digital channels.',
-    icon: BsStack,
+    title: 'Marine & Offshore Operations',
+    description: 'Crew transfer, pilot boats, survey vessels, and ship chandler services across Sarawak, Sabah, Labuan, and Brunei.',
+    icon: BsWater,
+    url: '/services/marine-offshore-operations',
   },
   {
-    title: 'Product Design',
-    description: 'Creating products that users love and businesses need.',
-    icon: BsBoxes,
+    title: 'Shipping & Forwarding',
+    description: 'Customs clearance, air/sea freight, inland transport, warehousing, and tug & barge services.',
+    icon: BsBoxSeam,
+    url: '/services/logistics-transport-solutions',
   },
   {
-    title: 'Web Design',
-    description: 'Designing websites that are visually appealing & user-friendly.',
-    icon: BsCircleSquare,
+    title: 'Equipment Rental & Supply',
+    description: 'Class-certified generators, hydraulic frames, tugger winches, DNV containers, and offshore equipment.',
+    icon: BsTools,
+    url: '/services/marine-equipment-general-supplies',
   },
   {
-    title: 'UI/UX Design',
-    description: 'Creating user interfaces that are both efficient and enjoyable.',
-    icon: BsVectorPen,
+    title: 'Engineering & Fabrication',
+    description: 'Aluminium and steel fabrication, welding, and structural engineering solutions for marine applications.',
+    icon: BsGear,
+    url: '/services/aluminium-steel-fabrication',
   },
   {
-    title: 'Business Strategy',
-    description: 'Developing and executing plans to achieve business goals.',
-    icon: BsBriefcase,
-  },
-  {
-    title: 'Research',
-    description: 'Gathering and analyzing data to inform decision-making.',
-    icon: BsBinoculars,
-  },
-  {
-    title: 'Web Development',
-    description: 'Building and maintaining websites and web applications.',
-    icon: BsCodeSlash,
-  },
-  {
-    title: 'Brand Design',
-    description: 'Creating brands that are unique, memorable, and meaningful.',
-    icon: BsBullseye,
+    title: 'Ship Repairs',
+    description: 'Comprehensive ship repair and maintenance services to keep your fleet operational and seaworthy.',
+    icon: BsWrench,
+    url: '/services/engineering-shipyard-services',
   },
 ]
 

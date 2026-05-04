@@ -22,8 +22,8 @@ const Services = () => {
 
       <Container className="position-relative">
         <div className="inner-container-small text-center">
-          <span className="bg-light heading-color small rounded-3 px-3 py-2">🚀 Innovative solutions, Measurable results</span>
-          <h2 className="mb-0 mt-4">We specialize in the following services</h2>
+          <span className="bg-light heading-color small rounded-3 px-3 py-2">⚓ Marine &amp; Offshore Services</span>
+          <h2 className="mb-0 mt-4">Five core service pillars</h2>
         </div>
 
         <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gy-5 gy-md-7 mt-3">

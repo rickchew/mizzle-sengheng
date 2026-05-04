@@ -17,13 +17,13 @@ const Hero = () => {
                   <Link href="/" className="text-white-50">Home</Link>
                 </li>
                 <li className="breadcrumb-item active text-white-50" aria-current="page">
-                  Shipping &amp; Forwarding
+                  Equipment Rental &amp; Supply
                 </li>
               </ol>
             </nav>
-            <h1 className="mb-4">Shipping, Forwarding &amp; Logistics Solutions</h1>
+            <h1 className="mb-4">Marine Equipment Rental &amp; General Supplies</h1>
             <p className="mb-4">
-              Customs clearance, air and sea freight, inland transport, warehousing, packing, and tug &amp; barge services — all under one roof, across East &amp; West Malaysia, Labuan, and Brunei.
+              Class-certified offshore equipment — generators, lifting frames, DNV containers, rescue boats, and more — deployed across East Malaysia, Labuan, and Brunei.
             </p>
           </Col>
           <Col md={4} className="ms-auto text-md-end">

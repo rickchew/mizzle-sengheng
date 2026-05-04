@@ -94,14 +94,21 @@ const AppMenu = ({ mobileMenuOpen, ulClassName, showMegaMenu, showResourceMenu: 
           )}
           {(
             <li className="nav-item">
-              <Link className="nav-link" href="/about-us">
+              <Link className="nav-link" href="/our-fleet">
                 Our Fleet
               </Link>
             </li>
           )}
           {(
             <li className="nav-item">
-              <Link className="nav-link" href="/about-us">
+              <Link className="nav-link" href="/our-clients">
+                Our Clients
+              </Link>
+            </li>
+          )}
+          {(
+            <li className="nav-item">
+              <Link className="nav-link" href="/contact">
                 Contact Us
               </Link>
             </li>

@@ -1,13 +1,10 @@
 import TopNavigationBar from '@/components/topbar/TopNavigationBar'
-import React from 'react'
+import Footer1 from '@/components/footer/Footer1'
 import Hero from './components/Hero'
 import Clients from './components/Clients'
-import About from './components/About'
 import Services from './components/Services'
-import Pricing from './components/Pricing'
-import Testimonials from './components/Testimonials'
+import About from './components/About'
 import CTA from './components/CTA'
-import Footer1 from '@/components/footer/Footer1'
 
 const page = () => {
   return (
@@ -18,16 +15,14 @@ const page = () => {
           showContactUs: true,
           ulClassName: 'ms-auto',
         }}
-        showBuyNow
-        showSignUp
+        showBuyNow={false}
+        showSignUp={false}
       />
       <main>
         <Hero />
         <Clients />
-        <About />
         <Services />
-        <Pricing />
-        <Testimonials />
+        <About />
         <CTA />
       </main>
       <Footer1 />

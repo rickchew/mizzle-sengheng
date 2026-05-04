@@ -17,12 +17,12 @@ const ServiceCard = ({ service }: ServiceCardPropType) => {
           <Icon className="fa-fw fs-5" />
         </div>
         <h5 className="mb-3">
-          <Link href="">{service.title}</Link>
+          <Link href={service.url ?? '#'}>{service.title}</Link>
         </h5>
         <p>{service.description}</p>
       </CardBody>
       <CardFooter className="bg-light mt-auto pt-2">
-        <Link className="icon-link icon-link-hover" href="">
+        <Link className="icon-link icon-link-hover" href={service.url ?? '#'}>
           Know more
           <BsArrowRight className="bi" />
         </Link>

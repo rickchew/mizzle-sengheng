@@ -579,26 +579,6 @@ export const APP_MENU_ITEMS: MenuItemType[] = [
     key: 'our-fleet',
     label: 'Our Fleet',
     url: '/our-fleet',
-    children: [
-      {
-        key: 'company-profile',
-        label: 'Company Profile​',
-        url: '/about-us/company-profile',
-        parentKey: 'about',
-      },
-      {
-        key: 'vision-mission',
-        label: 'Vision & Mission',
-        url: '/about-us/vision-mission',
-        parentKey: 'about',
-      },
-      {
-        key: 'hse',
-        label: 'Health, Safety & Environment (HSE)',
-        url: '/about-us/hse',
-        parentKey: 'about',
-      },
-    ],
   },
 ]
 
