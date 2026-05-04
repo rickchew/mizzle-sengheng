@@ -537,12 +537,6 @@ export const APP_MENU_ITEMS: MenuItemType[] = [
       
       
       
-      {
-        key: 'cold-storage-chillers',
-        label: 'Cold Storage & Chillers',
-        url: '/services/gcold-storage-chillers',
-        parentKey: 'services',
-      },
       // {
       //   key: 'coin-laundromat',
       //   label: 'Coin Laundromat',

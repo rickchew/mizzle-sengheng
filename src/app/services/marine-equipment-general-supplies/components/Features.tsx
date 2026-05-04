@@ -1,4 +1,4 @@
-import { BsArrowRight, BsBox2, BsLifePreserver, BsLightningCharge, BsArrowsMove } from 'react-icons/bs'
+import { BsArrowRight, BsBox2, BsLifePreserver, BsLightningCharge, BsArrowsMove, BsSnow } from 'react-icons/bs'
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import Link from 'next/link'
 
@@ -27,11 +27,17 @@ const equipmentItems = [
     description:
       'Garbage skid units and offshore rescue boats built to MARPOL and offshore safety standards — supporting compliance and emergency preparedness on every operation.',
   },
+  {
+    icon: <BsSnow size={28} />,
+    title: 'Cold Storage & Chillers',
+    description:
+      'Refrigerated containers and chiller units for temperature-sensitive cargo, provisions, and offshore supplies — available for rental and deployment across Sarawak, Sabah, and beyond.',
+  },
 ]
 
 const Features = () => {
   return (
-    <section className="pt-0">
+    <section className="pt-5">
       <Container>
         <div className="inner-container-small text-center mb-4 mb-sm-6">
           <span className="bg-primary bg-opacity-10 text-primary text-uppercase rounded small px-3 py-2">Equipment Categories</span>
