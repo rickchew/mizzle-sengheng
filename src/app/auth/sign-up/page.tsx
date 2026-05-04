@@ -31,9 +31,11 @@ const SignUp = () => {
     resolver: yupResolver(resetPasswordSchema),
   })
 
+  const watchedPassword = watch('password')
+
   useEffect(() => {
     setFirstPassword(getValues().password)
-  }, [watch('password')])
+  }, [watchedPassword, getValues])
 
   return (
     <>
