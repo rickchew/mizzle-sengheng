@@ -19,8 +19,8 @@ export const clientData: ClientType[] = [
   { image: client3Img, name: 'Petronas' },
   { image: client4Img, name: 'Dayang DESB' },
   { image: client5Img, name: 'Enviros' },
-  { image: client1Img, name: 'Cheimsain' },
-  { image: client2Img, name: 'SK Offshore' },
+  { image: client1Img, name: 'Chemsain' },
+  { image: client2Img, name: 'SKOM' },
   { image: client3Img, name: 'HGIS' },
 ]
 

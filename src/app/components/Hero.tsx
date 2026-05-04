@@ -58,7 +58,7 @@ const Hero = () => {
                       <BsShieldCheck size={40} />
                     </figure>
                     <div className="ms-3">
-                      <h6 className="mb-1">20+ Years Experience</h6>
+                      <h6 className="mb-1">Since 1998</h6>
                       <p className="mb-0 small">Serving the oil &amp; gas sector</p>
                     </div>
                   </div>

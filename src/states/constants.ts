@@ -12,5 +12,5 @@ export const buyLink = ''
 
 export const basePath = ''
 
-export const DEFAULT_PAGE_TITLE = ' Mizzle - Next Technology and Corporate Landing Template'
+export const DEFAULT_PAGE_TITLE = 'Seng Heng Shipping — Marine & Offshore Service Partner in Miri, Sarawak'
 

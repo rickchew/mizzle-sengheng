@@ -7,6 +7,13 @@ import Steps from './components/Steps'
 import CTA from './components/CTA'
 import Footer1 from '@/components/footer/Footer1'
 import TopNavigationBar from '@/components/topbar/TopNavigationBar'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Aluminium & Steel Fabrication',
+  description:
+    'Precision fabrication of steel structures, piping systems, industrial skids, DNV containers, and custom metal components for offshore and industrial applications across East Malaysia.',
+}
 
 const services = () => {
   return (

@@ -5,6 +5,13 @@ import Clients from './components/Clients'
 import Services from './components/Services'
 import About from './components/About'
 import CTA from './components/CTA'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Trusted Marine & Offshore Service Partner in Miri, Sarawak',
+  description:
+    'Seng Heng Shipping provides marine operations, shipping & forwarding, equipment rental, fabrication, and ship repair services across Sarawak, Sabah, East & West Malaysia, Labuan, and Brunei since 1998.',
+}
 
 const page = () => {
   return (

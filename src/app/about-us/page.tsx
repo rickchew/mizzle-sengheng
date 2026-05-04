@@ -2,6 +2,13 @@ import Footer1 from '@/components/footer/Footer1'
 import React from 'react'
 import Hero from './component/Hero'
 import TopNavigationBar from '@/components/topbar/TopNavigationBar'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description:
+    'Learn about Seng Heng Shipping — an integrated marine, shipping, and engineering services group based in Miri, Sarawak, serving offshore operations across East Malaysia, Labuan, and Brunei since 1998.',
+}
 
 const page = () => {
   return (

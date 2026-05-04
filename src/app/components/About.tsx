@@ -20,8 +20,8 @@ const About = () => {
                     <p className="mb-0 small">Vessels in Fleet</p>
                   </div>
                   <div className="bg-primary rounded text-center p-3 flex-fill">
-                    <span className="h2 text-white">20+</span>
-                    <p className="mb-0 text-white small">Years in Operation</p>
+                    <span className="h2 text-white">1998</span>
+                    <p className="mb-0 text-white small">Established Year</p>
                   </div>
                 </div>
               </Col>
