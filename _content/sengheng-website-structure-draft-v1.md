@@ -182,6 +182,6 @@ Please confirm final:
 
 ## 9) Source References
 
-- Wayback baseline: `/home/sausiang89/workspace-sengheng/sengheng-wayback-round1.md`
-- Intake notes: `/home/sausiang89/workspace-sengheng/sengheng-intake-notes.md`
+- Wayback baseline: `./sengheng-wayback-round1.md`
+- Intake notes: `./sengheng-intake-notes.md`
 - Client Dropbox links recorded in intake notes

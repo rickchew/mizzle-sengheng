@@ -295,6 +295,6 @@ Tell us your route, timeline, and operational scope. Our team will recommend sui
   3) Any legal/technical disclaimer requested by client
 
 - Supporting references in workspace:
-  - `/home/sausiang89/workspace-sengheng/our-fleet-page-template-v1.md`
-  - `/home/sausiang89/workspace-sengheng/sengheng-website-structure-draft-v1.md`
-  - `/home/sausiang89/workspace-sengheng/sengheng-intake-notes.md`
+  - `./our-fleet-page-template-v1.md`
+  - `./sengheng-website-structure-draft-v1.md`
+  - `./sengheng-intake-notes.md`
