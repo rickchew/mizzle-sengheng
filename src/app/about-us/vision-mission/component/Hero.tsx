@@ -1,4 +1,4 @@
-import bgImg from '@/assets/images/bg/05.jpg'
+import bgImg from '@/assets/images/vision-mission-hero.jpg'
 import Link from 'next/link'
 import { Col, Container, Row } from 'react-bootstrap'
 

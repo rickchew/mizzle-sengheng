@@ -13,11 +13,11 @@ const page = () => {
   return (
     <>
       <TopNavigationBar
-        showSignUp
-        showBuyNow
+        navClassName="navbar-dark"
+        data-bs-theme="dark"
         menuProps={{
           showContactUs: true,
-          showResourceMenu: true,
+          showDocs: true,
           ulClassName: 'ms-auto',
         }}
       />

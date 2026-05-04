@@ -1,14 +1,15 @@
-import pattern2 from '@/assets/images/elements/bg-pattern-2.png'
+import heroImg from '@/assets/images/marine-equipment-hero.jpg'
 import Link from 'next/link'
 import { Col, Container, Row } from 'react-bootstrap'
 
 const Hero = () => {
   return (
     <section
-      className="bg-dark pt-lg-8 pt-xl-9"
-      style={{ backgroundImage: `url(${pattern2.src})`, backgroundPosition: 'center left', backgroundSize: 'cover' }}
+      className="pt-lg-8 pt-xl-9 position-relative"
+      style={{ backgroundImage: `url(${heroImg.src})`, backgroundPosition: 'center', backgroundSize: 'cover' }}
       data-bs-theme="dark">
-      <Container className="position-relative pt-4 pt-lg-0">
+      <div className="bg-overlay bg-dark opacity-7" />
+      <Container className="position-relative z-index-1 pt-4 pt-lg-0">
         <Row className="align-items-center">
           <Col md={7} xl={6}>
             <nav className="mb-4" aria-label="breadcrumb">
