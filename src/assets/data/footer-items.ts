@@ -35,7 +35,7 @@ export const quickLinks: FooterLinkType[] = [
   { name: 'Equipment Rental & Supply', link: '/services/marine-equipment-general-supplies' },
   { name: 'Engineering & Fabrication', link: '/services/aluminium-steel-fabrication' },
   { name: 'Ship Repairs', link: '/services/engineering-shipyard-services' },
-  { name: 'Car Rental', link: '/services/Car-Rental-Service' },
+  { name: 'Car Rental', link: '/services/car-rental-service' },
 ]
 
 export const quickLinks2: FooterLinkType[] = [
