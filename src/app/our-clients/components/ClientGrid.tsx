@@ -36,7 +36,7 @@ const ClientGrid = () => {
             <Col key={idx}>
               <div className="card card-body bg-light border-0 text-center p-4 h-100 d-flex flex-column align-items-center justify-content-center">
                 <div className="mb-3" style={{ height: 60, display: 'flex', alignItems: 'center' }}>
-                  <Image src={client.image} alt={client.name} className="grayscale" style={client.imgStyle ?? { maxHeight: 45, maxWidth: 150, width: 'auto' }} />
+                  <Image src={client.image} alt={client.name} style={client.imgStyle ?? { maxHeight: 45, maxWidth: 150, width: 'auto' }} />
                 </div>
                 <h6 className="mb-1">{client.name}</h6>
                 <p className="small text-muted mb-0">{client.sector}</p>

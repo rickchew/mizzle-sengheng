@@ -1,6 +1,6 @@
-import logoSmall from '@/assets/images/logo-icon.svg'
-import logoLight from '@/assets/images/logo-light.svg'
-import logo from '@/assets/images/logo.svg'
+import logoSmall from '@/assets/images/logo-icon.png'
+import logoLight from '@/assets/images/logo-light.png'
+import logo from '@/assets/images/logo.png'
 import Image from 'next/image'
 import { NavbarBrand } from 'react-bootstrap'
 
@@ -12,11 +12,11 @@ type LogoBoxProps = {
 
 const LogoBox = ({ className, smallIcon, imageClassName }: LogoBoxProps) => {
   return smallIcon ? (
-    <Image src={logoSmall} className={className ?? ''} alt="logo" />
+    <Image src={logoSmall} className={className ?? ''} alt="Seng Heng logo" width={50} height={50} />
   ) : (
     <NavbarBrand className={className ?? ''} href='/'>
-      <Image className={`light-mode-item h-40px ${imageClassName ?? ''} `} src={logo} alt="logo" width={119} height={40} />
-      <Image className={`dark-mode-item h-40px ${imageClassName ?? ''}`} src={logoLight} alt="logo" width={119} height={40} />
+      <Image className={`light-mode-item h-40px ${imageClassName ?? ''} `} src={logo} alt="Seng Heng logo" width={120} height={40} />
+      <Image className={`dark-mode-item h-40px ${imageClassName ?? ''}`} src={logoLight} alt="Seng Heng logo" width={120} height={40} />
     </NavbarBrand>
   )
 }
