@@ -30,35 +30,12 @@ type ContactType = {
 }
 
 export const quickLinks: FooterLinkType[] = [
-  {
-    name: 'About us',
-    link: '/about/v1',
-  },
-  {
-    name: 'Contact us',
-    link: '/contact/v1',
-  },
-  {
-    name: 'Career',
-    link: '/career',
-    badge: '2 Job',
-  },
-  {
-    name: 'Career detail',
-    link: '/career/single',
-  },
-  {
-    name: 'Become a partner',
-    link: '/contact/v1',
-  },
-  {
-    name: 'Sign in',
-    link: '/auth/sign-in',
-  },
-  {
-    name: 'Sign up',
-    link: '/auth/sign-up',
-  },
+  { name: 'Marine & Offshore Operations', link: '/services/marine-offshore-operations' },
+  { name: 'Shipping & Forwarding', link: '/services/logistics-transport-solutions' },
+  { name: 'Equipment Rental & Supply', link: '/services/marine-equipment-general-supplies' },
+  { name: 'Engineering & Fabrication', link: '/services/aluminium-steel-fabrication' },
+  { name: 'Ship Repairs', link: '/services/engineering-shipyard-services' },
+  { name: 'Car Rental', link: '/services/Car-Rental-Service' },
 ]
 
 export const quickLinks2: FooterLinkType[] = [
@@ -143,28 +120,11 @@ export const quickLinks4: FooterLinkType[] = [
 ]
 
 export const communityLinks: FooterLinkType[] = [
-  {
-    name: 'Documents',
-  },
-  {
-    name: 'Supports',
-    icon: BsBoxArrowUpRight,
-  },
-  {
-    name: 'Faqs',
-    link: '/other-pages/faqs',
-  },
-  {
-    name: 'Privacy Policy',
-  },
-  {
-    name: 'News and blogs',
-    link: '/blog/grid',
-  },
-  {
-    name: 'Terms & condition',
-    link: '/other-pages/terms-conditions',
-  },
+  { name: 'Home', link: '/' },
+  { name: 'About Us', link: '/about-us' },
+  { name: 'Our Fleet', link: '/our-fleet' },
+  { name: 'Our Clients', link: '/our-clients' },
+  { name: 'Contact Us', link: '/contact' },
 ]
 
 export const communityLinks2 = [
@@ -187,10 +147,6 @@ export const communityLinks2 = [
 
 export const socialMediaLinks: SocialMediaLink[] = [
   { icon: FaFacebookF, iconClassName: 'bg-facebook' },
-  { icon: FaInstagram, iconClassName: 'bg-instagram' },
-  { icon: FaTwitter, iconClassName: 'bg-twitter' },
-  { icon: FaLinkedinIn, iconClassName: 'bg-linkedin' },
-  { icon: FaYoutube, iconClassName: 'bg-youtube' },
 ]
 
 export const contactDetail = {
