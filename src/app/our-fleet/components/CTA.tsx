@@ -33,11 +33,11 @@ const CTA = () => {
               <p className="text-white mb-4">
                 Tell us your route, timeline, and operational scope. Our team will recommend suitable vessels and support options.
               </p>
-              <div className="d-sm-flex justify-content-center gap-2">
-                <Link href="/contact" className="btn btn-dark mb-2 mb-sm-0">
+              <div className="d-flex flex-wrap justify-content-center gap-2">
+                <Link href="/contact" className="btn btn-dark px-4 py-2">
                   Contact Us
                 </Link>
-                <Link href="/contact" className="btn btn-dark">
+                <Link href="/contact" className="btn btn-dark px-4 py-2">
                   Request Fleet Availability
                 </Link>
               </div>
