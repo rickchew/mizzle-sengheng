@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: 'Contact Us',
   description:
     'Get in touch with Seng Heng Shipping for marine & offshore operations, equipment rental, logistics, fabrication, and ship repair services in Sarawak, Sabah, Labuan, and Brunei.',
+  alternates: { canonical: '/contact' },
 }
 
 const ContactPage = () => {

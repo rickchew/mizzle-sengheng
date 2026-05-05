@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: 'About Us',
   description:
     'Learn about Seng Heng Shipping — an integrated marine, shipping, and engineering services group based in Miri, Sarawak, serving offshore operations across East Malaysia, Labuan, and Brunei since 1998.',
+  alternates: { canonical: '/about-us' },
 }
 
 const page = () => {

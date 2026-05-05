@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: 'Aluminium & Steel Fabrication',
   description:
     'Precision fabrication of steel structures, piping systems, industrial skids, DNV containers, and custom metal components for offshore and industrial applications across East Malaysia.',
+  alternates: { canonical: '/services/aluminium-steel-fabrication' },
 }
 
 const services = () => {

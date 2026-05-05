@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Marine Equipment Rental & General Supplies',
   description:
     'Class-certified generators, hydraulic A-frames, tugger winches, DNV containers, rescue boats, and offshore equipment rental across East Malaysia, Labuan, and Brunei.',
+  alternates: { canonical: '/services/marine-equipment-general-supplies' },
 }
 
 const MarineEquipmentPage = () => {

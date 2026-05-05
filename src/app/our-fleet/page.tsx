@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'Our Fleet',
   description:
     'Explore Seng Heng Shipping\'s fleet of offshore support vessels, passenger/pilot/survey boats, and landing craft serving Sarawak, Sabah, East & West Malaysia, Labuan, and Brunei.',
+  alternates: { canonical: '/our-fleet' },
 }
 
 const OurFleetPage = () => {

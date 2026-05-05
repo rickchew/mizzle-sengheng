@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: 'Marine & Offshore Operations',
   description:
     'Seng Heng Shipping provides safe, reliable marine and offshore operations — crew transfer, pilot boats, survey vessels, ship chandler services, and offshore support across Sarawak, Sabah, Labuan, and Brunei.',
+  alternates: { canonical: '/services/marine-offshore-operations' },
 }
 
 const page = () => {

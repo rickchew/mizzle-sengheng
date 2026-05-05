@@ -13,7 +13,10 @@ const Instrument = Instrument_Sans({
 })
 
 
+const SITE_URL = 'https://www.senghengshipping.com'
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     template: '%s | Seng Heng Shipping',
     default: DEFAULT_PAGE_TITLE,
@@ -59,7 +62,9 @@ export const metadata: Metadata = {
 const localBusinessJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
+  '@id': `${SITE_URL}/#business`,
   name: 'Seng Heng Shipping',
+  url: SITE_URL,
   description:
     'Marine, offshore, shipping, equipment rental, fabrication, and ship repair services serving Sarawak, Sabah, East & West Malaysia, Labuan, and Brunei since 1998.',
   foundingDate: '1998',
@@ -80,6 +85,9 @@ const localBusinessJsonLd = {
     { '@type': 'AdministrativeArea', name: 'Labuan' },
     { '@type': 'Country', name: 'Malaysia' },
     { '@type': 'Country', name: 'Brunei' },
+  ],
+  sameAs: [
+    'https://www.facebook.com/senghengshipping',
   ],
 }
 

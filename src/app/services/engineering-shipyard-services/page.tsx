@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Engineering & Shipyard Services',
   description:
     'Ship repairs, hull maintenance, engine overhauls, structural welding, CAD engineering, and custom fabrication for the marine and offshore sector in East Malaysia, Labuan, and Brunei.',
+  alternates: { canonical: '/services/engineering-shipyard-services' },
 }
 
 const EngineeringShipyardPage = () => {
