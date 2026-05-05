@@ -9,7 +9,7 @@ import imgSengHengGlorious from '@/assets/images/fleet/seng-heng-glorious.jpg'
 import imgSengHengProgress from '@/assets/images/fleet/seng-heng-progress.jpg'
 import imgPlaceholderNewBoat from '@/assets/images/bg/04.jpg'
 import imgPlaceholderBest from '@/assets/images/bg/07.jpg'
-import imgPlaceholderEverGlory from '@/assets/images/bg/09.jpg'
+import imgEverGlory from '@/assets/images/fleet/ever-glory.jpg'
 
 export const vessels: VesselType[] = [
   {
@@ -90,7 +90,7 @@ export const vessels: VesselType[] = [
     loa: '11.8m',
     description: 'Short-route marine transport support.',
     category: 'passenger',
-    image: imgPlaceholderEverGlory,
+    image: imgEverGlory,
     pdfFile: 'Ever Glory (updated 04 March 2023).pdf',
   },
   {
