@@ -1,15 +1,15 @@
 import { VesselType } from './types'
 
-import img01 from '@/assets/images/bg/01.jpg'
-import img02 from '@/assets/images/bg/02.jpg'
-import img03 from '@/assets/images/bg/03.jpg'
-import img04 from '@/assets/images/bg/04.jpg'
-import img05 from '@/assets/images/bg/05.jpg'
-import img06 from '@/assets/images/bg/06.jpg'
-import img07 from '@/assets/images/bg/07.jpg'
-import img08 from '@/assets/images/bg/08.jpg'
-import img09 from '@/assets/images/bg/09.jpg'
-import img10 from '@/assets/images/bg/10.jpg'
+import imgMegaMaria from '@/assets/images/fleet/mega-maria.jpg'
+import imgMegaHope from '@/assets/images/fleet/mega-hope.jpg'
+import imgMegaSuccess from '@/assets/images/fleet/mega-success.jpg'
+import imgSengHengAwesome from '@/assets/images/fleet/seng-heng-awesome.jpg'
+import imgSengHengElite from '@/assets/images/fleet/seng-heng-elite.jpg'
+import imgSengHengGlorious from '@/assets/images/fleet/seng-heng-glorious.jpg'
+import imgSengHengProgress from '@/assets/images/fleet/seng-heng-progress.jpg'
+import imgPlaceholderNewBoat from '@/assets/images/bg/04.jpg'
+import imgPlaceholderBest from '@/assets/images/bg/07.jpg'
+import imgPlaceholderEverGlory from '@/assets/images/bg/09.jpg'
 
 export const vessels: VesselType[] = [
   {
@@ -18,7 +18,7 @@ export const vessels: VesselType[] = [
     loa: '34m',
     description: 'Offshore support and nearshore survey deployment support.',
     category: 'offshore',
-    image: img01,
+    image: imgMegaMaria,
     pdfFile: 'Mega Maria (Updated 23 Jan 2025).pdf',
   },
   {
@@ -27,7 +27,7 @@ export const vessels: VesselType[] = [
     loa: '19.1m',
     description: 'Passenger and offshore transfer support.',
     category: 'passenger',
-    image: img02,
+    image: imgMegaHope,
     pdfFile: 'Mega Hope _Ship Particular_updated 04.09.25.pdf',
   },
   {
@@ -36,7 +36,7 @@ export const vessels: VesselType[] = [
     loa: '18.1m',
     description: 'Crew transfer and pilot/survey support operations.',
     category: 'passenger',
-    image: img03,
+    image: imgMegaSuccess,
     pdfFile: 'Mega Success (Updated 13 March 2024).pdf',
   },
   {
@@ -45,7 +45,7 @@ export const vessels: VesselType[] = [
     loa: '17.5m',
     description: 'Flexible vessel for transfer and survey support assignments.',
     category: 'passenger',
-    image: img04,
+    image: imgPlaceholderNewBoat,
     pdfFile: 'New Boat-Ship Particular (Updated 31 December 2025).pdf',
   },
   {
@@ -54,7 +54,7 @@ export const vessels: VesselType[] = [
     loa: '15.8m',
     description: 'Fast transfer support for offshore crews and logistics.',
     category: 'passenger',
-    image: img05,
+    image: imgSengHengAwesome,
     pdfFile: 'Ship Particular Seng Heng Awesome (updated 06 Sept 2025).pdf',
   },
   {
@@ -63,7 +63,7 @@ export const vessels: VesselType[] = [
     loa: '15m',
     description: 'Pilot and personnel movement support.',
     category: 'passenger',
-    image: img06,
+    image: imgSengHengElite,
     pdfFile: 'SengHeng Elite (Updated 10 October 2024).pdf',
   },
   {
@@ -72,7 +72,7 @@ export const vessels: VesselType[] = [
     loa: '14m',
     description: 'Nearshore crew and light support transfer.',
     category: 'passenger',
-    image: img07,
+    image: imgPlaceholderBest,
     pdfFile: 'Ship Particular Seng Heng Best (updated 06 Sept 2025).pdf',
   },
   {
@@ -81,7 +81,7 @@ export const vessels: VesselType[] = [
     loa: '13.65m',
     description: 'Coastal transfer and operational support.',
     category: 'passenger',
-    image: img08,
+    image: imgSengHengGlorious,
     pdfFile: 'SengHeng Glorious (updated 24 oct 2025).pdf',
   },
   {
@@ -90,7 +90,7 @@ export const vessels: VesselType[] = [
     loa: '11.8m',
     description: 'Short-route marine transport support.',
     category: 'passenger',
-    image: img09,
+    image: imgPlaceholderEverGlory,
     pdfFile: 'Ever Glory (updated 04 March 2023).pdf',
   },
   {
@@ -99,7 +99,7 @@ export const vessels: VesselType[] = [
     loa: '19.5m',
     description: 'Landing craft support for cargo and deployment requirements.',
     category: 'landing-craft',
-    image: img10,
+    image: imgSengHengProgress,
     pdfFile: 'LCT SengHeng Progress (updated 10 Sep 2024).pdf',
   },
 ]
