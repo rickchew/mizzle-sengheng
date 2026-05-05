@@ -68,7 +68,7 @@ const Hero = () => {
           </Col>
 
           <Col md={10} xl={6} className="position-relative mx-auto mt-4 mt-xl-0">
-            <Image src={bg6Img} className="rounded-3" alt="Seng Heng fleet" />
+            <Image src={bg6Img} className="rounded-3" alt="Seng Heng fleet" priority />
             <div className="d-inline-block bg-dark rounded-4 position-absolute start-0 bottom-0 mb-md-4 ms-md-n3 p-3">
               <h6 className="text-white mb-1">Sarawak · Sabah · Labuan · Brunei</h6>
               <p className="text-white-50 small mb-0">Operational coverage across the region</p>

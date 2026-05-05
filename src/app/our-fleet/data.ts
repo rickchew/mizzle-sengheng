@@ -7,8 +7,8 @@ import imgSengHengAwesome from '@/assets/images/fleet/seng-heng-awesome.jpg'
 import imgSengHengElite from '@/assets/images/fleet/seng-heng-elite.jpg'
 import imgSengHengGlorious from '@/assets/images/fleet/seng-heng-glorious.jpg'
 import imgSengHengProgress from '@/assets/images/fleet/seng-heng-progress.jpg'
-import imgPlaceholderNewBoat from '@/assets/images/bg/04.jpg'
-import imgPlaceholderBest from '@/assets/images/bg/07.jpg'
+import imgNewBoat from '@/assets/images/fleet/new-boat.jpg'
+import imgSengHengBest from '@/assets/images/fleet/seng-heng-best.jpg'
 import imgEverGlory from '@/assets/images/fleet/ever-glory.jpg'
 
 export const vessels: VesselType[] = [
@@ -45,7 +45,7 @@ export const vessels: VesselType[] = [
     loa: '17.5m',
     description: 'Flexible vessel for transfer and survey support assignments.',
     category: 'passenger',
-    image: imgPlaceholderNewBoat,
+    image: imgNewBoat,
     pdfFile: 'New Boat-Ship Particular (Updated 31 December 2025).pdf',
   },
   {
@@ -72,7 +72,7 @@ export const vessels: VesselType[] = [
     loa: '14m',
     description: 'Nearshore crew and light support transfer.',
     category: 'passenger',
-    image: imgPlaceholderBest,
+    image: imgSengHengBest,
     pdfFile: 'Ship Particular Seng Heng Best (updated 06 Sept 2025).pdf',
   },
   {

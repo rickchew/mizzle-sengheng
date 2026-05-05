@@ -25,7 +25,7 @@ const CTA = () => {
             </svg>
           </figure>
           <div className="position-absolute end-0 bottom-0 me-sm-5">
-            <Image src={ctaVector} className="h-200px" alt="cta-vector" />
+            <Image src={ctaVector} className="h-200px" style={{ width: 'auto' }} alt="cta-vector" />
           </div>
           <Row className="g-4 position-relative">
             <Col lg={7} className="mx-auto text-center">

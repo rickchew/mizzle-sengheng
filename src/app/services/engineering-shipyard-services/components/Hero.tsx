@@ -35,7 +35,7 @@ const Hero = () => {
                 className="bg-dark rounded position-absolute top-0 end-0 w-50 h-100"
                 style={{ backgroundImage: `url(${pattern2.src})`, backgroundPosition: 'center left', backgroundSize: 'cover' }}
               />
-              <Image src={saasBg} className="rounded-4 border border-dark border-5 my-4 my-sm-6 position-relative" alt="ship-repair" />
+              <Image src={saasBg} className="rounded-4 border border-dark border-5 my-4 my-sm-6 position-relative" alt="ship-repair" priority />
               <Col xs={2} className="position-absolute bottom-0 start-0 ms-lg-n7">
                 <Image src={decoration1} className="shadow rounded-4" alt="engineering-detail" />
               </Col>
