@@ -30,7 +30,7 @@ const Clients = () => {
               wrapperClass="align-items-center">
               {clientData.map((client, idx) => (
                 <SwiperSlide key={idx}>
-                  {client.image && <Image src={client.image} className="grayscale" alt="" />}
+                  {client.image && <Image src={client.image} alt={client.name ?? ''} style={{ maxHeight: 50, width: 'auto', objectFit: 'contain' }} />}
                 </SwiperSlide>
               ))}
             </Swiper>

@@ -1,10 +1,13 @@
 import { BsWater, BsBoxSeam, BsGear, BsTools, BsWrench } from 'react-icons/bs'
 
-import client1Img from '@/assets/images/client/01.svg'
-import client2Img from '@/assets/images/client/02.svg'
-import client3Img from '@/assets/images/client/03.svg'
-import client4Img from '@/assets/images/client/04.svg'
-import client5Img from '@/assets/images/client/05.svg'
+import client1Img from '@/assets/images/client/petros.png'
+import client2Img from '@/assets/images/client/dialog.png'
+import client3Img from '@/assets/images/client/petronas.png'
+import client4Img from '@/assets/images/client/dayang.png'
+import client5Img from '@/assets/images/client/enviros.png'
+import client6Img from '@/assets/images/client/chemsain.png'
+import client7Img from '@/assets/images/client/skom.png'
+import client8Img from '@/assets/images/client/hgis.png'
 import avatar1 from '@/assets/images/avatar/01.jpg'
 import avatar2 from '@/assets/images/avatar/02.jpg'
 import avatar3 from '@/assets/images/avatar/03.jpg'
@@ -19,9 +22,9 @@ export const clientData: ClientType[] = [
   { image: client3Img, name: 'Petronas' },
   { image: client4Img, name: 'Dayang DESB' },
   { image: client5Img, name: 'Enviros' },
-  { image: client1Img, name: 'Chemsain' },
-  { image: client2Img, name: 'SKOM' },
-  { image: client3Img, name: 'HGIS' },
+  { image: client6Img, name: 'Chemsain' },
+  { image: client7Img, name: 'SKOM' },
+  { image: client8Img, name: 'HGIS' },
 ]
 
 export const services: ServiceType[] = [
