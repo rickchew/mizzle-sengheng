@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from './components/Hero'
 import Overview from './components/Overview'
+import PricingTable from './components/PricingTable'
 import Benefits from './components/Benefits'
 import Steps from './components/Steps'
 import CTA from './components/CTA'
@@ -26,6 +27,7 @@ const CarRentalServicePage = () => {
       <main>
         <Hero />
         <Overview />
+        <PricingTable />
         <Benefits />
         <Steps />
         <CTA />
