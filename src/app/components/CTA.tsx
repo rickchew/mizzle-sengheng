@@ -18,7 +18,7 @@ const CTA = () => {
                 <Link href="/contact" className="btn btn-dark">
                   Contact Us
                 </Link>
-                <Link href="/our-fleet" className="btn btn-outline-light">
+                <Link href="/our-fleet" className="btn btn-light">
                   View Our Fleet
                 </Link>
               </div>

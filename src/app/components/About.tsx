@@ -25,7 +25,7 @@ const About = () => {
                   </div>
                 </div>
               </Col>
-              <Col sm={6} className="mt-4 mt-sm-0">
+              <Col sm={6} className="mt-4 mt-sm-6">
                 <Image src={about1} className="rounded" alt="Seng Heng marine equipment" />
               </Col>
             </Row>

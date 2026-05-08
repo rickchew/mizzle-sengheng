@@ -59,7 +59,7 @@ const AppMenu = ({ mobileMenuOpen, ulClassName, showMegaMenu, showResourceMenu: 
         <ul className={`navbar-nav navbar-nav-scroll ${ulClassName ?? ''}`}>
           {(
             <li className="nav-item">
-              <Link className="nav-link" href="/">
+              <Link className={`nav-link${pathname === '/' ? ' active' : ''}`} href="/">
                 Home
               </Link>
             </li>
@@ -94,21 +94,14 @@ const AppMenu = ({ mobileMenuOpen, ulClassName, showMegaMenu, showResourceMenu: 
           )}
           {(
             <li className="nav-item">
-              <Link className="nav-link" href="/our-fleet">
+              <Link className={`nav-link${pathname?.startsWith('/our-fleet') ? ' active' : ''}`} href="/our-fleet">
                 Our Fleet
               </Link>
             </li>
           )}
           {(
             <li className="nav-item">
-              <Link className="nav-link" href="/our-clients">
-                Our Clients
-              </Link>
-            </li>
-          )}
-          {(
-            <li className="nav-item">
-              <Link className="nav-link" href="/contact">
+              <Link className={`nav-link${pathname?.startsWith('/contact') ? ' active' : ''}`} href="/contact">
                 Contact Us
               </Link>
             </li>

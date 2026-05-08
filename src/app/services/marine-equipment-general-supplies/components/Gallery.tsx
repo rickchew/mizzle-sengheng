@@ -2,7 +2,6 @@
 import { useEffect } from 'react'
 import { initIsotope } from '@/helpers/init-isotope'
 import img1 from '@/assets/images/equipment/01.jpg'
-import img2 from '@/assets/images/equipment/02.jpg'
 import img3 from '@/assets/images/equipment/03.jpg'
 import img4 from '@/assets/images/equipment/04.jpg'
 import img5 from '@/assets/images/equipment/05.jpg'
@@ -12,7 +11,6 @@ import Image from 'next/image'
 
 const galleryItems = [
   { image: img1, title: 'Genset Skid Unit', subtitle: '104 KW diesel generator on certified lifting skid' },
-  { image: img2, title: 'Silent Generator Set', subtitle: 'Soundproof enclosure unit for offshore deployment' },
   { image: img3, title: 'Hydraulic Power Pack', subtitle: 'DNV-certified container with 3.0 MT SWL rating' },
   { image: img4, title: 'Tugger Winch', subtitle: 'Heavy-duty wire rope winch for deck operations' },
   { image: img5, title: 'Equipment Mobilisation', subtitle: 'Doosan generator loaded for port delivery' },

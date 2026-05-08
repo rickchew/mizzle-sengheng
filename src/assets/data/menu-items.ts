@@ -561,6 +561,12 @@ export const APP_MENU_ITEMS: MenuItemType[] = [
         url: '/about-us/hse',
         parentKey: 'about',
       },
+      {
+        key: 'our-clients',
+        label: 'Our Clients',
+        url: '/our-clients',
+        parentKey: 'about',
+      },
     ],
   },
   {
