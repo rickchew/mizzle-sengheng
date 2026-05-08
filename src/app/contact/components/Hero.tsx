@@ -22,7 +22,7 @@ const Hero = () => {
   })
 
   return (
-    <section className="pt-xl-8">
+    <section className="pt-xl-8 pb-0">
       <Container>
         <Row className="g-4 g-xxl-5">
           <Col xl={9} className="mx-auto">

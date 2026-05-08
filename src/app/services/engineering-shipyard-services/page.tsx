@@ -3,6 +3,7 @@ import TopNavigationBar from '@/components/topbar/TopNavigationBar'
 import type { Metadata } from 'next'
 import Benefits from './components/Benefits'
 import CTA from './components/CTA'
+import Gallery from './components/Gallery'
 import Hero from './components/Hero'
 import Overview from './components/Overview'
 import Steps from './components/Steps'
@@ -23,10 +24,12 @@ const EngineeringShipyardPage = () => {
           showDocs: true,
           ulClassName: 'ms-auto',
         }}
+        data-bs-theme="dark"
       />
       <main>
         <Hero />
         <Overview />
+        <Gallery />
         <Benefits />
         <Steps />
         <CTA />

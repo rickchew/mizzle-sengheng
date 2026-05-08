@@ -47,12 +47,6 @@ export const services: ServiceType[] = [
     url: '/services/marine-equipment-general-supplies',
   },
   {
-    title: 'Engineering & Fabrication',
-    description: 'Aluminium and steel fabrication, welding, and structural engineering solutions for marine applications.',
-    icon: BsGear,
-    url: '/services/aluminium-steel-fabrication',
-  },
-  {
     title: 'Ship Repairs',
     description: 'Comprehensive ship repair and maintenance services to keep your fleet operational and seaworthy.',
     icon: BsWrench,

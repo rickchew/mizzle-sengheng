@@ -523,12 +523,6 @@ export const APP_MENU_ITEMS: MenuItemType[] = [
         parentKey: 'services',
       },
       {
-        key: 'aluminium-steel-fabrication',
-        label: 'Aluminium & Steel Fabrication​',
-        url: '/services/aluminium-steel-fabrication',
-        parentKey: 'services',
-      },
-      {
         key: 'marine-offshore-operations',
         label: 'Marine & Offshore Operations',
         url: '/services/marine-offshore-operations',

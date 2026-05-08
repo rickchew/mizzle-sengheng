@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/services/marine-offshore-operations`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${SITE_URL}/services/logistics-transport-solutions`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/services/engineering-shipyard-services`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${SITE_URL}/services/aluminium-steel-fabrication`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/services/marine-equipment-general-supplies`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
   ]
 }

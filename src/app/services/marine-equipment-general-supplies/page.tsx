@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import Benefits from './components/Benefits'
 import CTA from './components/CTA'
 import Features from './components/Features'
+import Gallery from './components/Gallery'
 import Hero from './components/Hero'
 import Steps from './components/Steps'
 
@@ -28,6 +29,7 @@ const MarineEquipmentPage = () => {
       <main>
         <Hero />
         <Features />
+        <Gallery />
         <Benefits />
         <Steps />
         <CTA />
