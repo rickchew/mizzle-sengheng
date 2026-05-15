@@ -33,8 +33,8 @@ export const works: WorkType[] = [
 export const locations: LocationType[] = [
   {
     countryName: 'Miri Headquarters',
-    address: 'Miri, Sarawak, Malaysia',
-    number: 'Available on request',
+    address: 'Lot 674, Ground Floor, Jalan Permaisuri, 98000 Miri, Sarawak',
+    number: '+6085-410096',
     image: logoIcon,
   },
 ]

@@ -44,7 +44,7 @@ const Hero = () => {
                     <h1 className="mb-3 h3">Get in Touch with Seng Heng</h1>
                     <p className="mb-0">
                       Send us an enquiry and our team will respond within 1 business day. You can also reach us at{' '}
-                      <Link href="mailto:info@sengheng.com">info@sengheng.com</Link>
+                      <Link href="mailto:senghengshipping@gmail.com">senghengshipping@gmail.com</Link>
                     </p>
                   </CardHeader>
                   <Form onSubmit={handleSubmit(() => {})} className="card-body px-0 pb-0 pt-5">
