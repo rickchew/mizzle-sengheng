@@ -27,18 +27,18 @@ const CTA = () => {
             <Col lg={5} xl={4} className="ms-auto text-lg-end">
               <ul className="list-group list-group-borderless mb-0">
                 <li className="list-group-item mb-0">
-                  <Link href="tel:+60" className="text-white fw-normal icons-center">
-                    <BsTelephoneFill className="me-2" /> Call Us
+                  <Link href="tel:+6085410096" className="text-white fw-normal icons-center">
+                    <BsTelephoneFill className="me-2" /> +6085-410096
                   </Link>
                 </li>
                 <li className="list-group-item mb-0">
-                  <Link href="https://wa.me/60" className="text-white fw-normal icons-center">
-                    <BsWhatsapp className="me-2" /> WhatsApp
+                  <Link href="https://wa.me/60138680096" className="text-white fw-normal icons-center">
+                    <BsWhatsapp className="me-2" /> +6013-8680096
                   </Link>
                 </li>
                 <li className="list-group-item mb-0">
-                  <Link href="mailto:info@sengheng.com" className="text-white fw-normal icons-center">
-                    <BsEnvelope className="me-2" /> info@sengheng.com
+                  <Link href="mailto:senghengshipping@gmail.com" className="text-white fw-normal icons-center">
+                    <BsEnvelope className="me-2" /> senghengshipping@gmail.com
                   </Link>
                 </li>
               </ul>
