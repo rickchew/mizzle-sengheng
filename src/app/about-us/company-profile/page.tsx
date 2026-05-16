@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: 'Company Profile | Seng Heng Shipping',
   description:
     'Founded in 1998 in Miri, Sarawak — Seng Heng is an integrated marine, shipping, and engineering services group serving offshore operations across East Malaysia, Labuan, and Brunei.',
+  alternates: { canonical: '/about-us/company-profile' },
 }
 
 const CompanyProfilePage = () => {

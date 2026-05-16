@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Vision & Mission',
   description:
     'Seng Heng Shipping\'s vision, mission, and core values — a trusted marine and offshore service partner serving Sarawak, Sabah, East & West Malaysia, Labuan, and Brunei since 1998.',
+  alternates: { canonical: '/about-us/vision-mission' },
 }
 
 const VisionMissionPage = () => {

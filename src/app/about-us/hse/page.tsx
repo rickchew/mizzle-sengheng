@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: 'Health, Safety & Environment (HSE) | Seng Heng Shipping',
   description:
     'How Seng Heng Shipping runs marine, offshore, forwarding, and warehousing operations safely — class-certified vessels and equipment, experienced crew, secured warehousing, and customs-compliant documentation across Sarawak, Sabah, Labuan, and Brunei.',
+  alternates: { canonical: '/about-us/hse' },
 }
 
 const HsePage = () => {

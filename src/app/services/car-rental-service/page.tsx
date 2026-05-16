@@ -12,6 +12,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Car Rental Service',
   description: 'Reliable car rental service in Miri, Sarawak. Seng Heng provides well-maintained vehicles for corporate, offshore crew, and personal use across East Malaysia.',
+  alternates: { canonical: '/services/car-rental-service' },
 }
 
 const CarRentalServicePage = () => {
