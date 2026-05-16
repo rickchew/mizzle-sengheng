@@ -1,4 +1,4 @@
-import { BlogType, ClientType, FeatureType, RecentProjectType, ServiceType, TestimonialType } from '@/app/demos/agency/creative/types'
+import { BlogType, ClientType, FeatureType, RecentProjectType, ServiceType, TestimonialType } from '@/app/_archive/demos/agency/creative/types'
 
 import client1 from '@/assets/images/client/01.svg'
 import client2 from '@/assets/images/client/02.svg'

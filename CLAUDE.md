@@ -186,3 +186,26 @@ CTA 2: View Our Services
 bun dev          # 启动开发服务器
 bun run build    # 生产构建
 ```
+
+---
+
+## 十一、部署平台 — Cloudflare Workers
+
+本站托管于 **Cloudflare Workers**（通过 `@opennextjs/cloudflare`），不是 Vercel 或 Node.js 服务器。
+
+**关键后果：**
+- TypeScript 类型检查在 CF 构建时是**严格强制执行**的，所有类型错误都会导致构建失败，即使本地 `bun dev` 正常运行。
+- 移动或归档文件时，**必须同步更新所有 import 路径**。尤其是归档到 `_archive/` 的文件，其内部 import 不会自动更新。
+- 修改任何文件后，**在 `git push` 前必须运行以下命令验证构建**：
+
+```bash
+npx opennextjs-cloudflare build
+```
+
+或等效的：
+
+```bash
+bun run build
+```
+
+构建通过后才允许 push。
