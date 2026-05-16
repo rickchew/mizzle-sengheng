@@ -13,6 +13,19 @@ export const metadata: Metadata = {
   description:
     'Ship repairs, hull maintenance, engine overhauls, structural welding, CAD engineering, and custom fabrication for the marine and offshore sector in East Malaysia, Labuan, and Brunei.',
   alternates: { canonical: '/services/engineering-shipyard-services' },
+  openGraph: {
+    title: 'Engineering & Shipyard Services | Seng Heng Shipping',
+    description:
+      'Ship repairs, hull maintenance, engine overhauls, structural welding, CAD engineering, and custom fabrication for the marine and offshore sector in East Malaysia, Labuan, and Brunei.',
+    url: '/services/engineering-shipyard-services',
+    images: [{ url: '/og/engineering.jpg', alt: 'Seng Heng Shipping — Engineering & Shipyard Services' }],
+  },
+  twitter: {
+    title: 'Engineering & Shipyard Services | Seng Heng Shipping',
+    description:
+      'Ship repairs, hull maintenance, engine overhauls, structural welding, CAD engineering, and custom fabrication for the marine and offshore sector in East Malaysia, Labuan, and Brunei.',
+    images: ['/og/engineering.jpg'],
+  },
 }
 
 const EngineeringShipyardPage = () => {

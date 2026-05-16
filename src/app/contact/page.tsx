@@ -9,6 +9,19 @@ export const metadata: Metadata = {
   description:
     'Get in touch with Seng Heng Shipping for marine & offshore operations, equipment rental, logistics, fabrication, and ship repair services in Sarawak, Sabah, Labuan, and Brunei.',
   alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact Us | Seng Heng Shipping',
+    description:
+      'Get in touch with Seng Heng Shipping for marine & offshore operations, equipment rental, logistics, fabrication, and ship repair services in Sarawak, Sabah, Labuan, and Brunei.',
+    url: '/contact',
+    images: [{ url: '/og/home.jpg', alt: 'Seng Heng Shipping — Contact Us' }],
+  },
+  twitter: {
+    title: 'Contact Us | Seng Heng Shipping',
+    description:
+      'Get in touch with Seng Heng Shipping for marine & offshore operations, equipment rental, logistics, fabrication, and ship repair services in Sarawak, Sabah, Labuan, and Brunei.',
+    images: ['/og/home.jpg'],
+  },
 }
 
 const ContactPage = () => {

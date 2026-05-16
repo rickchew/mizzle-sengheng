@@ -13,6 +13,19 @@ export const metadata: Metadata = {
   description:
     'Seng Heng Shipping provides safe, reliable marine and offshore operations — crew transfer, pilot boats, survey vessels, ship chandler services, and offshore support across Sarawak, Sabah, Labuan, and Brunei.',
   alternates: { canonical: '/services/marine-offshore-operations' },
+  openGraph: {
+    title: 'Marine & Offshore Operations | Seng Heng Shipping',
+    description:
+      'Safe, reliable crew transfer, pilot boats, survey vessels, ship chandler, and offshore support services across Sarawak, Sabah, Labuan, and Brunei.',
+    url: '/services/marine-offshore-operations',
+    images: [{ url: '/og/marine.jpg', alt: 'Seng Heng Shipping — Marine & Offshore Operations' }],
+  },
+  twitter: {
+    title: 'Marine & Offshore Operations | Seng Heng Shipping',
+    description:
+      'Safe, reliable crew transfer, pilot boats, survey vessels, ship chandler, and offshore support services across Sarawak, Sabah, Labuan, and Brunei.',
+    images: ['/og/marine.jpg'],
+  },
 }
 
 const page = () => {

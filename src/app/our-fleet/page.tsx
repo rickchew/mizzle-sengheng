@@ -11,6 +11,19 @@ export const metadata: Metadata = {
   description:
     'Explore Seng Heng Shipping\'s fleet of offshore support vessels, passenger/pilot/survey boats, and landing craft serving Sarawak, Sabah, East & West Malaysia, Labuan, and Brunei.',
   alternates: { canonical: '/our-fleet' },
+  openGraph: {
+    title: 'Our Fleet | Seng Heng Shipping',
+    description:
+      'Explore Seng Heng Shipping\'s fleet of offshore support vessels, passenger/pilot/survey boats, and landing craft serving Sarawak, Sabah, East & West Malaysia, Labuan, and Brunei.',
+    url: '/our-fleet',
+    images: [{ url: '/og/fleet.jpg', alt: 'Seng Heng Shipping — Our Fleet of Marine Vessels' }],
+  },
+  twitter: {
+    title: 'Our Fleet | Seng Heng Shipping',
+    description:
+      'Explore Seng Heng Shipping\'s fleet of offshore support vessels, passenger/pilot/survey boats, and landing craft serving Sarawak, Sabah, East & West Malaysia, Labuan, and Brunei.',
+    images: ['/og/fleet.jpg'],
+  },
 }
 
 const OurFleetPage = () => {

@@ -41,15 +41,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_MY',
     siteName: 'Seng Heng Shipping',
-    title: DEFAULT_PAGE_TITLE,
+    title: 'Seng Heng Shipping — Marine & Offshore Services',
     description:
       'Trusted marine & offshore service partner in Miri, Sarawak — operations, forwarding, equipment rental, engineering, and fleet services since 1998.',
+    images: [
+      {
+        url: '/og/home.jpg',
+        alt: 'Seng Heng Shipping — Marine & Offshore Services, Miri Sarawak',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: DEFAULT_PAGE_TITLE,
+    title: 'Seng Heng Shipping — Marine & Offshore Services',
     description:
       'Trusted marine & offshore service partner in Miri, Sarawak — operations, forwarding, equipment rental, engineering, and fleet services since 1998.',
+    images: ['/og/home.jpg'],
   },
   other: {
     'geo.region': 'MY-13',

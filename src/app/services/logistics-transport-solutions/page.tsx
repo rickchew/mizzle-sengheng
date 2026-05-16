@@ -15,6 +15,19 @@ export const metadata: Metadata = {
   description:
     'Customs clearance, air and sea freight, inland transport, warehousing, packing, and tug & barge services across East & West Malaysia, Labuan, and Brunei — all under one roof at Seng Heng Shipping.',
   alternates: { canonical: '/services/logistics-transport-solutions' },
+  openGraph: {
+    title: 'Shipping, Forwarding & Logistics Solutions | Seng Heng Shipping',
+    description:
+      'Customs clearance, air and sea freight, inland transport, warehousing, packing, and tug & barge services across East & West Malaysia, Labuan, and Brunei — all under one roof at Seng Heng Shipping.',
+    url: '/services/logistics-transport-solutions',
+    images: [{ url: '/og/logistics.jpg', alt: 'Seng Heng Shipping — Shipping, Forwarding & Logistics' }],
+  },
+  twitter: {
+    title: 'Shipping, Forwarding & Logistics Solutions | Seng Heng Shipping',
+    description:
+      'Customs clearance, air and sea freight, inland transport, warehousing, packing, and tug & barge services across East & West Malaysia, Labuan, and Brunei — all under one roof at Seng Heng Shipping.',
+    images: ['/og/logistics.jpg'],
+  },
 }
 
 const page = () => {

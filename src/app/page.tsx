@@ -12,6 +12,19 @@ export const metadata: Metadata = {
   description:
     'Seng Heng Shipping provides marine operations, shipping & forwarding, equipment rental, fabrication, and ship repair services across Sarawak, Sabah, East & West Malaysia, Labuan, and Brunei since 1998.',
   alternates: { canonical: '/' },
+  openGraph: {
+    title: 'Trusted Marine & Offshore Service Partner in Miri, Sarawak',
+    description:
+      'Marine operations, shipping & forwarding, equipment rental, fabrication, and ship repair across Sarawak, Sabah, East & West Malaysia, Labuan, and Brunei since 1998.',
+    url: '/',
+    images: [{ url: '/og/home.jpg', alt: 'Seng Heng Shipping — Marine & Offshore Operations, Miri Sarawak' }],
+  },
+  twitter: {
+    title: 'Trusted Marine & Offshore Service Partner in Miri, Sarawak',
+    description:
+      'Marine operations, shipping & forwarding, equipment rental, fabrication, and ship repair across Sarawak, Sabah, East & West Malaysia, Labuan, and Brunei since 1998.',
+    images: ['/og/home.jpg'],
+  },
 }
 
 const page = () => {

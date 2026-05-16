@@ -9,6 +9,20 @@ export const metadata: Metadata = {
   title: 'Our Clients',
   description:
     'Seng Heng Shipping serves leading oil & gas operators including Petronas, Petros, Dialog, Dayang DESB, and more across Sarawak, Sabah, Labuan, and Brunei.',
+  alternates: { canonical: '/our-clients' },
+  openGraph: {
+    title: 'Our Clients | Seng Heng Shipping',
+    description:
+      'Seng Heng Shipping serves leading oil & gas operators including Petronas, Petros, Dialog, Dayang DESB, and more across Sarawak, Sabah, Labuan, and Brunei.',
+    url: '/our-clients',
+    images: [{ url: '/og/home.jpg', alt: 'Seng Heng Shipping — Our Clients' }],
+  },
+  twitter: {
+    title: 'Our Clients | Seng Heng Shipping',
+    description:
+      'Seng Heng Shipping serves leading oil & gas operators including Petronas, Petros, Dialog, Dayang DESB, and more across Sarawak, Sabah, Labuan, and Brunei.',
+    images: ['/og/home.jpg'],
+  },
 }
 
 const OurClientsPage = () => {
