@@ -1,6 +1,3 @@
-'use client'
-import { useEffect } from 'react'
-import { initIsotope } from '@/helpers/init-isotope'
 import img1 from '@/assets/images/equipment/01.jpg'
 import img3 from '@/assets/images/equipment/03.jpg'
 import img4 from '@/assets/images/equipment/04.jpg'
@@ -18,16 +15,12 @@ const galleryItems = [
 ]
 
 const Gallery = () => {
-  useEffect(() => {
-    initIsotope()
-  }, [])
-
   return (
     <section className="pt-6 pb-8">
       <Container>
-        <Row className="g-4 filter-container" data-isotope='{"layoutMode": "masonry"}'>
+        <Row className="g-4">
           {galleryItems.map((item, idx) => (
-            <div key={idx} className="col-sm-6 col-lg-4 grid-item">
+            <div key={idx} className="col-sm-6 col-lg-4">
               <Card className="card-element-hover card-metro-hover">
                 <Image src={item.image} alt={item.title} />
                 <div className="card-img-overlay hover-element d-flex">

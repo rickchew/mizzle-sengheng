@@ -5,21 +5,30 @@ const useScrollEvent = () => {
   const [scrollY, setScrollY] = useState(0)
   const [scrollHeight, setScrollHeight] = useState(0)
 
-  const handleScroll = () => {
-    setScrollY(window.scrollY)
-    setScrollPassed(((window.scrollY + window.innerHeight) * 100) / document.body.offsetHeight)
-  }
-
   useEffect(() => {
-    const handleEffect = () => {
-      setScrollY(window.scrollY)
-      setScrollHeight(document.body.offsetHeight)
+    // Read offsetHeight once; update only on resize — not on every scroll
+    let bodyHeight = document.body.offsetHeight
+
+    const handleScroll = () => {
+      const y = window.scrollY
+      setScrollY(y)
+      setScrollPassed(((y + window.innerHeight) * 100) / bodyHeight)
     }
-    
-    handleEffect() // Set initial values
+
+    const handleResize = () => {
+      bodyHeight = document.body.offsetHeight
+      setScrollHeight(bodyHeight)
+    }
+
+    setScrollY(window.scrollY)
+    setScrollHeight(bodyHeight)
+
     window.addEventListener('scroll', handleScroll, { passive: true })
+    window.addEventListener('resize', handleResize, { passive: true })
+
     return () => {
       window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleResize)
     }
   }, [])
 

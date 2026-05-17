@@ -2,8 +2,6 @@
 import GLightbox from 'glightbox'
 import { useEffect, useRef, type AnchorHTMLAttributes } from 'react'
 
-import 'glightbox/dist/css/glightbox.min.css'
-
 const GlightBox = ({ children, href, ...other }: { href: string } & AnchorHTMLAttributes<HTMLAnchorElement>) => {
   const ref = useRef<HTMLAnchorElement | null>(null)
   useEffect(() => {

@@ -28,9 +28,38 @@ export const metadata: Metadata = {
   },
 }
 
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.senghengshipping.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Marine & Offshore Operations', item: 'https://www.senghengshipping.com/services/marine-offshore-operations' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://www.senghengshipping.com/services/marine-offshore-operations#service',
+      name: 'Marine & Offshore Operations',
+      provider: { '@id': 'https://www.senghengshipping.com/#business' },
+      description: 'Crew transfer, pilot boats, survey vessels, ship chandler, and offshore support services across Sarawak, Sabah, Labuan, and Brunei.',
+      url: 'https://www.senghengshipping.com/services/marine-offshore-operations',
+      areaServed: [
+        { '@type': 'AdministrativeArea', name: 'Sarawak' },
+        { '@type': 'AdministrativeArea', name: 'Sabah' },
+        { '@type': 'AdministrativeArea', name: 'Labuan' },
+        { '@type': 'Country', name: 'Malaysia' },
+        { '@type': 'Country', name: 'Brunei' },
+      ],
+    },
+  ],
+}
+
 const page = () => {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
       <TopNavigationBar
         menuProps={{
           showContactUs: true,

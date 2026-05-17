@@ -3,8 +3,6 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 import Image from 'next/image'
-import 'swiper/css'
-import 'swiper/swiper-bundle.css'
 import { clientData } from '../data'
 
 const Clients = () => {

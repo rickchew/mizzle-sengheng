@@ -26,9 +26,19 @@ export const metadata: Metadata = {
   },
 }
 
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.senghengshipping.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Our Fleet', item: 'https://www.senghengshipping.com/our-fleet' },
+  ],
+}
+
 const OurFleetPage = () => {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
       <TopNavigationBar
         menuProps={{
           showMegaMenu: false,

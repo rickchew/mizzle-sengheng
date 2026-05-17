@@ -30,9 +30,38 @@ export const metadata: Metadata = {
   },
 }
 
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.senghengshipping.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Shipping, Forwarding & Logistics Solutions', item: 'https://www.senghengshipping.com/services/logistics-transport-solutions' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://www.senghengshipping.com/services/logistics-transport-solutions#service',
+      name: 'Shipping, Forwarding & Logistics Solutions',
+      provider: { '@id': 'https://www.senghengshipping.com/#business' },
+      description: 'Customs clearance, air and sea freight, inland transport, warehousing, packing, and tug & barge services across East & West Malaysia, Labuan, and Brunei.',
+      url: 'https://www.senghengshipping.com/services/logistics-transport-solutions',
+      areaServed: [
+        { '@type': 'AdministrativeArea', name: 'Sarawak' },
+        { '@type': 'AdministrativeArea', name: 'Sabah' },
+        { '@type': 'AdministrativeArea', name: 'Labuan' },
+        { '@type': 'Country', name: 'Malaysia' },
+        { '@type': 'Country', name: 'Brunei' },
+      ],
+    },
+  ],
+}
+
 const page = () => {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
       <TopNavigationBar
         navClassName="navbar-dark"
         data-bs-theme="dark"

@@ -16,6 +16,7 @@ type FooterLinkType = {
 type SocialMediaLink = {
   icon: IconType
   iconClassName: string
+  label: string
 }
 
 type LanguageType = {
@@ -145,7 +146,7 @@ export const communityLinks2 = [
 ]
 
 export const socialMediaLinks: SocialMediaLink[] = [
-  { icon: FaFacebookF, iconClassName: 'bg-facebook' },
+  { icon: FaFacebookF, iconClassName: 'bg-facebook', label: 'Follow us on Facebook' },
 ]
 
 export const contactDetail = {

@@ -68,7 +68,7 @@ const Footer1 = () => {
                     const href = socialLinks[item.iconClassName] ?? '#'
                     return (
                       <li key={item.iconClassName + idx} className="list-inline-item pe-1">
-                        <Link className="btn btn-xs btn-icon btn-light" href={href} target="_blank" rel="noopener noreferrer">
+                        <Link className="btn btn-xs btn-icon btn-light" href={href} target="_blank" rel="noopener noreferrer" aria-label={item.label}>
                           {Icon && <Icon />}
                         </Link>
                       </li>

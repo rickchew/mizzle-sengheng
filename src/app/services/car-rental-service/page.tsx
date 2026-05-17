@@ -15,9 +15,35 @@ export const metadata: Metadata = {
   alternates: { canonical: '/services/car-rental-service' },
 }
 
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.senghengshipping.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Car Rental Service', item: 'https://www.senghengshipping.com/services/car-rental-service' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://www.senghengshipping.com/services/car-rental-service#service',
+      name: 'Car Rental Service',
+      provider: { '@id': 'https://www.senghengshipping.com/#business' },
+      description: 'Reliable car rental in Miri, Sarawak for corporate, offshore crew, and personal use across East Malaysia.',
+      url: 'https://www.senghengshipping.com/services/car-rental-service',
+      areaServed: [
+        { '@type': 'AdministrativeArea', name: 'Sarawak' },
+        { '@type': 'Country', name: 'Malaysia' },
+      ],
+    },
+  ],
+}
+
 const CarRentalServicePage = () => {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
       <TopNavigationBar
         menuProps={{
           showContactUs: true,

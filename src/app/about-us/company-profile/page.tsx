@@ -15,9 +15,20 @@ export const metadata: Metadata = {
   alternates: { canonical: '/about-us/company-profile' },
 }
 
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.senghengshipping.com/' },
+    { '@type': 'ListItem', position: 2, name: 'About Us', item: 'https://www.senghengshipping.com/about-us' },
+    { '@type': 'ListItem', position: 3, name: 'Company Profile', item: 'https://www.senghengshipping.com/about-us/company-profile' },
+  ],
+}
+
 const CompanyProfilePage = () => {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
       <TopNavigationBar
         menuProps={{
           showContactUs: true,

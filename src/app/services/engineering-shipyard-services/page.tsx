@@ -28,9 +28,38 @@ export const metadata: Metadata = {
   },
 }
 
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.senghengshipping.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Engineering & Shipyard Services', item: 'https://www.senghengshipping.com/services/engineering-shipyard-services' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://www.senghengshipping.com/services/engineering-shipyard-services#service',
+      name: 'Engineering & Shipyard Services',
+      provider: { '@id': 'https://www.senghengshipping.com/#business' },
+      description: 'Ship repairs, hull maintenance, engine overhauls, structural welding, CAD engineering, and custom fabrication for the marine and offshore sector in East Malaysia, Labuan, and Brunei.',
+      url: 'https://www.senghengshipping.com/services/engineering-shipyard-services',
+      areaServed: [
+        { '@type': 'AdministrativeArea', name: 'Sarawak' },
+        { '@type': 'AdministrativeArea', name: 'Sabah' },
+        { '@type': 'AdministrativeArea', name: 'Labuan' },
+        { '@type': 'Country', name: 'Malaysia' },
+        { '@type': 'Country', name: 'Brunei' },
+      ],
+    },
+  ],
+}
+
 const EngineeringShipyardPage = () => {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
       <TopNavigationBar
         menuProps={{
           showContactUs: true,

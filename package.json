@@ -49,6 +49,7 @@
     "@types/node": "^20",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "critters": "^0.0.23",
     "eslint": "^9",
     "eslint-config-next": "^16.0.7",
     "eslint-plugin-react-hooks": "^5.1.0",
@@ -61,5 +62,18 @@
   "overrides": {
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3"
+  },
+  "browserslist": {
+    "production": [
+      "chrome >= 93",
+      "safari >= 15.4",
+      "firefox >= 92",
+      "edge >= 93"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

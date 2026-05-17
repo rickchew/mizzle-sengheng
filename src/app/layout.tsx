@@ -1,4 +1,6 @@
 import '@/assets/scss/style.scss'
+import 'swiper/css'
+import 'glightbox/dist/css/glightbox.min.css'
 import BackToTop from '@/components/BackToTop'
 import PageWrapper from '@/components/PageWrapper'
 import { DEFAULT_PAGE_TITLE } from '@/states/constants'
@@ -66,35 +68,56 @@ export const metadata: Metadata = {
   },
 }
 
-const localBusinessJsonLd = {
+const siteJsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': `${SITE_URL}/#business`,
-  name: 'Seng Heng Shipping',
-  url: SITE_URL,
-  description:
-    'Marine, offshore, shipping, equipment rental, fabrication, and ship repair services serving Sarawak, Sabah, East & West Malaysia, Labuan, and Brunei since 1998.',
-  foundingDate: '1998',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Miri',
-    addressRegion: 'Sarawak',
-    addressCountry: 'MY',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 4.3995,
-    longitude: 113.9914,
-  },
-  areaServed: [
-    { '@type': 'AdministrativeArea', name: 'Sarawak' },
-    { '@type': 'AdministrativeArea', name: 'Sabah' },
-    { '@type': 'AdministrativeArea', name: 'Labuan' },
-    { '@type': 'Country', name: 'Malaysia' },
-    { '@type': 'Country', name: 'Brunei' },
-  ],
-  sameAs: [
-    'https://www.facebook.com/senghengshipping',
+  '@graph': [
+    {
+      '@type': 'LocalBusiness',
+      '@id': `${SITE_URL}/#business`,
+      name: 'Seng Heng Shipping',
+      url: SITE_URL,
+      description:
+        'Marine, offshore, shipping, equipment rental, fabrication, and ship repair services serving Sarawak, Sabah, East & West Malaysia, Labuan, and Brunei since 1998.',
+      foundingDate: '1998',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Miri',
+        addressRegion: 'Sarawak',
+        addressCountry: 'MY',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 4.3995,
+        longitude: 113.9914,
+      },
+      areaServed: [
+        { '@type': 'AdministrativeArea', name: 'Sarawak' },
+        { '@type': 'AdministrativeArea', name: 'Sabah' },
+        { '@type': 'AdministrativeArea', name: 'Labuan' },
+        { '@type': 'Country', name: 'Malaysia' },
+        { '@type': 'Country', name: 'Brunei' },
+      ],
+      sameAs: ['https://www.facebook.com/senghengshipping'],
+    },
+    {
+      '@type': 'Organization',
+      '@id': `${SITE_URL}/#organization`,
+      name: 'Seng Heng Shipping',
+      url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/og/home.jpg`,
+      },
+      foundingDate: '1998',
+      sameAs: ['https://www.facebook.com/senghengshipping'],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: 'Seng Heng Shipping',
+      publisher: { '@id': `${SITE_URL}/#organization` },
+    },
   ],
 }
 
@@ -108,7 +131,7 @@ export default function RootLayout({
       <body className={Instrument.className}>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
         />
         <PageWrapper>
           {children}
