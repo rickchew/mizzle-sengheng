@@ -20,13 +20,16 @@ const useScrollEvent = () => {
       setScrollHeight(bodyHeight)
     }
 
-    setScrollY(window.scrollY)
-    setScrollHeight(bodyHeight)
+    const rafId = requestAnimationFrame(() => {
+      setScrollY(window.scrollY)
+      setScrollHeight(bodyHeight)
+    })
 
     window.addEventListener('scroll', handleScroll, { passive: true })
     window.addEventListener('resize', handleResize, { passive: true })
 
     return () => {
+      cancelAnimationFrame(rafId)
       window.removeEventListener('scroll', handleScroll)
       window.removeEventListener('resize', handleResize)
     }
