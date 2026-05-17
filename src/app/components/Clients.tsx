@@ -11,7 +11,7 @@ const Clients = () => {
       <Container>
         <Row className="align-items-center">
           <Col md={3} className="mb-2 mb-md-0">
-            <h5 className="pe-6">Trusted by industry leaders</h5>
+            <h2 className="h5 pe-6">Trusted by industry leaders</h2>
           </Col>
           <Col md={9}>
             <Swiper
