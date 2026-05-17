@@ -16,9 +16,9 @@ const ServiceCard = ({ service }: ServiceCardPropType) => {
         <div className="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5 flex-centered">
           <Icon className="fa-fw fs-5" />
         </div>
-        <h5 className="mb-3">
+        <h3 className="h5 mb-3">
           <Link href={service.url ?? '#'}>{service.title}</Link>
-        </h5>
+        </h3>
         <p>{service.description}</p>
       </CardBody>
       <CardFooter className="bg-light mt-auto pt-2">

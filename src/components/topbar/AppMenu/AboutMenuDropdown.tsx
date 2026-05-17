@@ -57,7 +57,7 @@ const MenuItem = ({ item, linkClassName }: SubMenuType) => {
 
 const PagesMenuDropdown = ({ menuItems, activeMenuItems }: PagesMenuDropdownProps) => {
   return (
-    <Dropdown className="nav-item dropdown">
+    <Dropdown as="li" className="nav-item dropdown">
       <DropdownToggle
         as={Link}
         href=""

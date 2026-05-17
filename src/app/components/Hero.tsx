@@ -1,8 +1,7 @@
-'use client'
 import bg6Img from '@/assets/images/home-hero.jpg'
 import { Col, Container, Row } from 'react-bootstrap'
 import { BsWater, BsShieldCheck } from 'react-icons/bs'
-import { ReactTyped } from 'react-typed'
+import HeroTyped from './HeroTyped'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -19,13 +18,7 @@ const Hero = () => {
               <h1 className="mt-3 lh-base">
                 Marine &amp; Offshore&nbsp;
                 <span className="text-primary d-block">
-                  <ReactTyped
-                    strings={['Operations', 'Forwarding', 'Equipment Supply', 'Ship Repairs']}
-                    className="typed"
-                    typeSpeed={120}
-                    backSpeed={60}
-                    loop
-                  />
+                  <HeroTyped />
                 </span>
                 — Under One Roof
               </h1>
@@ -47,7 +40,7 @@ const Hero = () => {
                       <BsWater size={40} />
                     </figure>
                     <div className="ms-3">
-                      <h6 className="mb-1">10 Vessels in Fleet</h6>
+                      <p className="h6 mb-1">10 Vessels in Fleet</p>
                       <p className="mb-0 small">Offshore, survey &amp; landing craft</p>
                     </div>
                   </div>
@@ -58,7 +51,7 @@ const Hero = () => {
                       <BsShieldCheck size={40} />
                     </figure>
                     <div className="ms-3">
-                      <h6 className="mb-1">Since 1998</h6>
+                      <p className="h6 mb-1">Since 1998</p>
                       <p className="mb-0 small">Serving the oil &amp; gas sector</p>
                     </div>
                   </div>
@@ -70,7 +63,7 @@ const Hero = () => {
           <Col md={10} xl={6} className="position-relative mx-auto mt-4 mt-xl-0">
             <Image src={bg6Img} className="rounded-3" alt="Seng Heng fleet" priority />
             <div className="d-inline-block bg-dark rounded-4 position-absolute start-0 bottom-0 mb-md-4 ms-md-n3 p-3">
-              <h6 className="text-white mb-1">Sarawak · Sabah · Labuan · Brunei</h6>
+              <p className="h6 text-white mb-1">Sarawak · Sabah · Labuan · Brunei</p>
               <p className="text-white-50 small mb-0">Operational coverage across the region</p>
             </div>
           </Col>
