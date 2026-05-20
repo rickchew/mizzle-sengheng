@@ -1,3 +1,4 @@
+import { OpenPanelComponent } from '@openpanel/nextjs'
 import '@/assets/scss/style.scss'
 import 'swiper/css'
 import 'glightbox/dist/css/glightbox.min.css'
@@ -129,6 +130,12 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body className={Instrument.className}>
+        <OpenPanelComponent
+          clientId="66c04d84-5ffa-4095-8324-2f84089dd3e4"
+          trackScreenViews
+          trackOutgoingLinks
+          trackAttributes
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}

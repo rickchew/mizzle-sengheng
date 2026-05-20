@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@openpanel/nextjs": "^1.5.1",
     "@popperjs/core": "^2.11.8",
     "axios": "^1.7.9",
     "axios-mock-adapter": "^2.1.0",
